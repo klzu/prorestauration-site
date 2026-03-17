@@ -2,3 +2,4 @@
 *.bak
 *.log
 Thumbs.db
+.claude/
