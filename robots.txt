@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.prorestauration.fr/sitemap.xml
+Sitemap: https://www.prorestauration.fr/blog/sitemap.xml

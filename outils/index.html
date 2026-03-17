@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outils Gratuits pour Restaurateurs : Calculateurs, Templates et Checklists | ProRestauration.fr</title>
+  <meta name="description" content="Tous les outils gratuits de ProRestauration.fr : calculateur food cost, générateur de fiches techniques, checklists HACCP, planning d'équipe, simulateur de rentabilité.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.prorestauration.fr/outils/">
+  <meta property="og:title" content="Outils Gratuits pour Restaurateurs : Calculateurs, Templates et Checklists">
+  <meta property="og:description" content="Tous les outils gratuits de ProRestauration.fr : calculateur food cost, générateur de fiches techniques, checklists HACCP, planning d'équipe, simulateur de rentabilité.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.prorestauration.fr/outils/">
+  <meta property="og:site_name" content="ProRestauration.fr">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Outils Gratuits pour Restaurateurs : Calculateurs, Templates et Checklists">
+  <meta name="twitter:description" content="Tous les outils gratuits de ProRestauration.fr : calculateur food cost, générateur de fiches techniques, checklists HACCP, planning d'équipe, simulateur de rentabilité.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.prorestauration.fr/"},{"@type":"ListItem","position":2,"name":"Outils","item":"https://www.prorestauration.fr/outils/"}]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css?v2">
+  <style>
+    .outils-hero { background:var(--noir); color:var(--blanc); padding:60px 0 52px; }
+    .outils-hero-inner { max-width:1260px; margin:0 auto; padding:0 24px; }
+    .outils-hero .sec-label { color:var(--rouge); }
+    .outils-hero h1 { font-family:var(--ff-titre); font-size:clamp(30px,4vw,52px); font-weight:900; line-height:1.1; letter-spacing:-0.02em; margin:10px 0 16px; }
+    .outils-hero h1 em { font-style:normal; color:var(--rouge); }
+    .outils-hero p { font-size:16px; color:rgba(255,255,255,0.65); line-height:1.75; max-width:560px; }
+
+    .outils-grid-section { padding:64px 0; background:var(--beige); }
+    .outils-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; max-width:1260px; margin:0 auto; padding:0 24px; }
+
+    .outil-card { background:var(--blanc); border:1px solid var(--border); text-decoration:none; color:var(--noir); display:flex; flex-direction:column; gap:0; transition:border-color 0.2s,transform 0.2s; position:relative; overflow:hidden; }
+    .outil-card::after { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--rouge); transform:scaleX(0); transition:transform 0.25s; transform-origin:left; }
+    .outil-card:hover { border-color:var(--rouge); transform:translateY(-3px); }
+    .outil-card:hover::after { transform:scaleX(1); }
+
+    .outil-card-top { padding:28px 28px 20px; display:flex; flex-direction:column; gap:12px; flex:1; }
+    .outil-icon { font-size:32px; width:58px; height:58px; background:var(--gris-clair); display:flex; align-items:center; justify-content:center; border-radius:2px; }
+    .outil-badge { font-size:10px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; padding:3px 10px; display:inline-flex; align-items:center; gap:5px; width:fit-content; }
+    .outil-badge.gratuit { background:rgba(34,197,94,0.12); color:#16a34a; }
+    .outil-badge.interactif { background:rgba(59,130,246,0.12); color:#1d4ed8; }
+    .outil-title { font-family:var(--ff-titre); font-size:20px; font-weight:700; line-height:1.2; }
+    .outil-desc { font-size:13.5px; color:var(--gris-mid); line-height:1.65; }
+
+    .outil-features { border-top:1px solid var(--border); padding:16px 28px 20px; display:flex; flex-direction:column; gap:7px; }
+    .outil-feat { font-size:12.5px; color:var(--gris-fonce); display:flex; align-items:center; gap:8px; }
+    .outil-feat::before { content:'✓'; color:var(--rouge); font-weight:700; font-size:13px; flex-shrink:0; }
+
+    .outil-card-cta { padding:0 28px 24px; }
+    .outil-cta-btn { display:inline-flex; align-items:center; gap:6px; font-size:13.5px; font-weight:600; color:var(--rouge); }
+    .outil-card:hover .outil-cta-btn { gap:10px; }
+
+    .outils-intro { max-width:1260px; margin:0 auto; padding:0 24px 40px; }
+    .outils-intro .sec-label { margin-bottom:8px; }
+    .outils-intro .sec-title { margin-bottom:10px; }
+    .outils-intro .sec-sub { margin-bottom:0; }
+
+    @media(max-width:1024px) { .outils-grid { grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:640px) { .outils-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-top">
+    ✦ Premier article publié : <a href="/haccp/temperature-conservation-aliments/">Températures de conservation 2026 →</a>
+  </div>
+  <div class="nav-main">
+    <a href="../" class="logo">Pro<span>Restauration</span>.fr</a>
+    <nav>
+<a href="/haccp/">HACCP &amp; Hygiène</a>
+<a href="/gestion-restaurant/">Gestion &amp; Finances</a>
+<a href="/fiches-techniques/">Fiches techniques</a>
+<a href="/recrutement-restauration/">RH &amp; Recrutement</a>
+<a href="/equipements/">Équipements professionnels</a>
+<a href="/ouvrir-restaurant/">Ouvrir un restaurant</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="../outils/" class="btn-primary">Outils gratuits ↗</a>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-mobile" id="navMobile" style="display:none" role="dialog" aria-label="Menu principal">
+  <a href="/haccp/">HACCP &amp; Hygiène</a>
+  <a href="/gestion-restaurant/">Gestion &amp; Finances</a>
+  <a href="/fiches-techniques/">Fiches techniques</a>
+  <a href="/recrutement-restauration/">RH &amp; Recrutement</a>
+  <a href="/equipements/">Équipements professionnels</a>
+  <a href="/ouvrir-restaurant/">Ouvrir un restaurant</a>
+  <a href="/outils/" class="nav-mobile-cta">Outils gratuits ↗</a>
+</div>
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="/">Accueil</a> <span class="bc-sep">›</span> <span>Outils gratuits</span>
+    </nav>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="outils-hero">
+  <div class="outils-hero-inner">
+    <div class="sec-label">Outils gratuits</div>
+    <h1>Des outils <em>concrets</em> pour gérer votre restaurant au quotidien.</h1>
+    <p>Calculateurs, générateurs, checklists et modèles — tous gratuits, utilisables directement en ligne ou à télécharger.</p>
+  </div>
+</div>
+
+<!-- GRILLE OUTILS -->
+<div class="outils-grid-section">
+  <div class="outils-intro">
+    <div class="sec-label">5 outils disponibles</div>
+    <div class="sec-title">Tous nos outils pour restaurateurs</div>
+    <div class="sec-sub">Conçus par des professionnels, mis à jour régulièrement.</div>
+  </div>
+
+  <div class="outils-grid">
+
+    <!-- Calculateur food cost -->
+    <a class="outil-card" href="../outils/calculateur-food-cost/">
+      <div class="outil-card-top">
+        <div class="outil-icon">💶</div>
+        <div class="outil-badge gratuit">✦ Gratuit · En ligne</div>
+        <div class="outil-title">Calculateur Food Cost</div>
+        <div class="outil-desc">Calculez instantanément le coût de revient et le prix de vente idéal de vos plats. Entrez vos ingrédients, obtenez votre marge en temps réel.</div>
+      </div>
+      <div class="outil-features">
+        <div class="outil-feat">Calcul automatique du food cost en %</div>
+        <div class="outil-feat">Prix de vente conseillé selon votre marge cible</div>
+        <div class="outil-feat">Résultats instantanés, sans inscription</div>
+      </div>
+      <div class="outil-card-cta">
+        <span class="outil-cta-btn">Accéder à l'outil →</span>
+      </div>
+    </a>
+
+    <!-- Générateur fiche technique -->
+    <a class="outil-card" href="../outils/generateur-fiche-technique/">
+      <div class="outil-card-top">
+        <div class="outil-icon">📋</div>
+        <div class="outil-badge interactif">✦ Interactif · En ligne</div>
+        <div class="outil-title">Générateur de Fiche Technique</div>
+        <div class="outil-desc">Créez vos fiches techniques professionnelles en ligne. Saisissez vos ingrédients et quantités, le calcul du coût de revient se fait automatiquement.</div>
+      </div>
+      <div class="outil-features">
+        <div class="outil-feat">Fiche technique au format professionnel</div>
+        <div class="outil-feat">Calcul du coût de revient par portion</div>
+        <div class="outil-feat">Impression ou export PDF</div>
+      </div>
+      <div class="outil-card-cta">
+        <span class="outil-cta-btn">Accéder à l'outil →</span>
+      </div>
+    </a>
+
+    <!-- Checklist HACCP -->
+    <a class="outil-card" href="../outils/checklist-haccp/">
+      <div class="outil-card-top">
+        <div class="outil-icon">✅</div>
+        <div class="outil-badge gratuit">✦ Gratuit · Imprimable</div>
+        <div class="outil-title">Checklist HACCP</div>
+        <div class="outil-desc">Checklists HACCP quotidiennes à imprimer ou utiliser sur tablette : relevés de température, nettoyage-désinfection, réception de marchandises.</div>
+      </div>
+      <div class="outil-features">
+        <div class="outil-feat">Relevés de température quotidiens</div>
+        <div class="outil-feat">Plan de nettoyage et désinfection</div>
+        <div class="outil-feat">Réception et traçabilité des marchandises</div>
+      </div>
+      <div class="outil-card-cta">
+        <span class="outil-cta-btn">Accéder à l'outil →</span>
+      </div>
+    </a>
+
+    <!-- Planning restaurant -->
+    <a class="outil-card" href="../outils/planning-restaurant/">
+      <div class="outil-card-top">
+        <div class="outil-icon">📅</div>
+        <div class="outil-badge gratuit">✦ Gratuit · Excel & PDF</div>
+        <div class="outil-title">Planning d'Équipe Restaurant</div>
+        <div class="outil-desc">Modèle de planning hebdomadaire pour restaurant à télécharger. Format Excel modifiable et PDF imprimable pour organiser les horaires de votre équipe.</div>
+      </div>
+      <div class="outil-features">
+        <div class="outil-feat">Planning semaine modifiable (Excel)</div>
+        <div class="outil-feat">Version PDF prête à imprimer</div>
+        <div class="outil-feat">Compatible convention collective CHR</div>
+      </div>
+      <div class="outil-card-cta">
+        <span class="outil-cta-btn">Télécharger le modèle →</span>
+      </div>
+    </a>
+
+    <!-- Simulateur rentabilité -->
+    <a class="outil-card" href="../outils/simulateur-rentabilite/">
+      <div class="outil-card-top">
+        <div class="outil-icon">📈</div>
+        <div class="outil-badge interactif">✦ Interactif · Excel avancé</div>
+        <div class="outil-title">Simulateur de Rentabilité</div>
+        <div class="outil-desc">Simulez la rentabilité de votre restaurant : chiffre d'affaires prévisionnel, charges, résultat net. Outil Excel avancé gratuit pour valider votre modèle économique.</div>
+      </div>
+      <div class="outil-features">
+        <div class="outil-feat">Prévisionnel CA, charges et résultat net</div>
+        <div class="outil-feat">Seuil de rentabilité automatique</div>
+        <div class="outil-feat">Scénarios optimiste / réaliste / pessimiste</div>
+      </div>
+      <div class="outil-card-cta">
+        <span class="outil-cta-btn">Accéder à l'outil →</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid container">
+    <div>
+      <a href="../" class="footer-logo">Pro<span>Restauration</span>.fr</a>
+      <p class="footer-tagline">Le portail de référence des professionnels de la restauration, de l'hôtellerie et de la cuisine collective en France.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Ressources</h4>
+      <ul>
+        <li><a href="../haccp/">HACCP</a></li>
+        <li><a href="../fiches-techniques/">Fiches techniques</a></li>
+        <li><a href="../gestion-restaurant/">Gestion & finances</a></li>
+        <li><a href="../recrutement-restauration/">RH & Recrutement</a></li>
+        <li><a href="../ouvrir-restaurant/">Ouvrir un restaurant</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Outils</h4>
+      <ul>
+        <li><a href="../outils/generateur-fiche-technique/">Générateur fiches techniques</a></li>
+        <li><a href="../outils/calculateur-food-cost/">Calculateur food cost</a></li>
+        <li><a href="../outils/checklist-haccp/">Checklist HACCP</a></li>
+        <li><a href="../outils/planning-restaurant/">Planning équipe</a></li>
+        <li><a href="../outils/simulateur-rentabilite/">Simulateur rentabilité</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>À propos</h4>
+      <ul>
+        <li><a href="../a-propos/">Qui sommes-nous ?</a></li>
+        <li><a href="../contact/">Contact</a></li>
+        <li><a href="../mentions-legales/">Mentions légales</a></li>
+        <li><a href="../politique-confidentialite/">Confidentialité</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <span>© 2026 ProRestauration.fr · Tous droits réservés</span>
+    <div class="footer-links">
+      <a href="../politique-confidentialite/">Confidentialité</a>
+      <a href="../mentions-legales/">Mentions légales</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var burger = document.getElementById('navBurger');
+  var menu   = document.getElementById('navMobile');
+  if (!burger || !menu) return;
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    menu.style.display = open ? 'flex' : 'none';
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('open');
+      menu.style.display = 'none';
+      burger.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+})();
+</script>
+</body>
+</html>

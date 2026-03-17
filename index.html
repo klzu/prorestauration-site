@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProRestauration.fr – Le portail de référence des professionnels de la restauration</title>
+  <meta name="description" content="ProRestauration.fr : ressources, guides, fiches techniques et actualités pour les professionnels de la restauration. HACCP, gestion, recrutement, équipements.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.prorestauration.fr/">
+  <meta property="og:title" content="ProRestauration.fr – Le portail des pros de la restauration">
+  <meta property="og:description" content="Fiches techniques, guides HACCP, gestion RH et opérationnelle pour restaurants, hôtels et collectivités.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.prorestauration.fr/">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"ProRestauration.fr","url":"https://www.prorestauration.fr","potentialAction":{"@type":"SearchAction","target":"https://www.prorestauration.fr/recherche?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/images/hero-kitchen.webp" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="assets/css/style.css?v2">
+  <style>
+    /* ── HERO PHOTO ───────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 78vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      color: var(--blanc);
+    }
+    /* Image with subtle zoom-in on load */
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: image-set(
+        url('assets/images/hero-kitchen.webp') type('image/webp'),
+        url('assets/images/hero-kitchen.jpg') type('image/jpeg')
+      );
+      background-position: center 40%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: scale(1.06);
+      animation: heroZoom 14s cubic-bezier(0.25,0.46,0.45,0.94) forwards;
+      will-change: transform;
+      z-index: 0;
+    }
+    @keyframes heroZoom {
+      from { transform: scale(1.06); }
+      to   { transform: scale(1); }
+    }
+    /* Multi-layer overlay: deep gradient left + bottom vignette */
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(108deg,
+          rgba(6,6,6,0.94) 0%,
+          rgba(6,6,6,0.82) 38%,
+          rgba(6,6,6,0.42) 62%,
+          rgba(6,6,6,0.18) 100%
+        ),
+        linear-gradient(to top, rgba(6,6,6,0.72) 0%, transparent 42%);
+      z-index: 1;
+    }
+    /* Red accent grain top-left */
+    .hero-overlay::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 3px;
+      height: 100%;
+      background: linear-gradient(to bottom, var(--rouge) 0%, transparent 70%);
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 1260px;
+      margin: 0 auto;
+      padding: 0 48px;
+      width: 100%;
+    }
+    .hero-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+    .hero-eyebrow-line {
+      display: block;
+      width: 36px;
+      height: 2px;
+      background: var(--rouge);
+      flex-shrink: 0;
+    }
+    .hero-eyebrow span {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+    }
+    .hero h1 {
+      font-family: var(--ff-titre);
+      font-size: clamp(42px, 5.8vw, 80px);
+      font-weight: 900;
+      line-height: 1.01;
+      letter-spacing: -0.03em;
+      margin-bottom: 26px;
+      max-width: 720px;
+    }
+    .hero h1 em { font-style: normal; color: var(--rouge); }
+    .hero-sub {
+      font-size: 17px;
+      color: rgba(255,255,255,0.58);
+      line-height: 1.78;
+      margin-bottom: 42px;
+      max-width: 480px;
+      font-weight: 300;
+    }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-actions .btn-primary {
+      font-size: 14px;
+      padding: 13px 28px;
+      letter-spacing: 0.03em;
+    }
+    /* Scroll indicator */
+    .hero-scroll {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .hero-scroll-line {
+      width: 1px;
+      height: 48px;
+      background: linear-gradient(to bottom, var(--rouge), transparent);
+      animation: scrollPulse 2.2s ease-in-out infinite;
+      transform-origin: top;
+    }
+    .hero-scroll span {
+      font-size: 9.5px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 1; transform: scaleY(1); }
+      50%       { opacity: 0.35; transform: scaleY(0.65); }
+    }
+
+    .themes-bar { background:var(--gris-clair); border-bottom:1px solid var(--border); overflow-x:auto; scrollbar-width:none; }
+    .themes-bar::-webkit-scrollbar { display:none; }
+    .themes-inner { max-width:1260px; margin:0 auto; padding:0 24px; display:flex; }
+    .theme-pill { display:flex; align-items:center; gap:8px; padding:14px 18px; font-size:13px; font-weight:500; color:var(--gris-mid); text-decoration:none; white-space:nowrap; border-bottom:2px solid transparent; transition:color 0.15s,border-color 0.15s; }
+    .theme-pill:hover,.theme-pill.active { color:var(--rouge); border-bottom-color:var(--rouge); }
+
+    section.home-sec { padding:64px 0; }
+    section.home-sec.alt { background:var(--beige); }
+    .sec-label { font-size:11px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:var(--rouge); margin-bottom:10px; }
+    .sec-title { font-family:var(--ff-titre); font-size:clamp(26px,3vw,40px); font-weight:700; line-height:1.15; letter-spacing:-0.02em; margin-bottom:12px; }
+    .sec-sub { font-size:15px; color:var(--gris-mid); max-width:540px; margin-bottom:40px; }
+
+    /* Silos */
+    .silos-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .silo-card { background:var(--blanc); border:1px solid var(--border); padding:26px; text-decoration:none; color:var(--noir); display:flex; flex-direction:column; gap:12px; transition:border-color 0.2s,transform 0.2s; position:relative; overflow:hidden; }
+    .silo-card::after { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--rouge); transform:scaleX(0); transition:transform 0.25s; transform-origin:left; }
+    .silo-card:hover { border-color:var(--rouge); transform:translateY(-3px); }
+    .silo-card:hover::after { transform:scaleX(1); }
+    .silo-icon { font-size:30px; width:52px; height:52px; background:var(--gris-clair); display:flex; align-items:center; justify-content:center; }
+    .silo-title { font-family:var(--ff-titre); font-size:19px; font-weight:700; line-height:1.2; }
+    .silo-desc { font-size:13.5px; color:var(--gris-mid); line-height:1.65; }
+    .silo-links { display:flex; flex-direction:column; gap:6px; padding-top:8px; border-top:1px solid var(--border); }
+    .silo-link { font-size:13px; color:var(--gris-fonce); text-decoration:none; display:flex; align-items:center; gap:5px; }
+    .silo-link:hover { color:var(--rouge); }
+    .silo-link::before { content:'→'; color:var(--rouge); font-size:11px; }
+
+    /* 1er article */
+    .first-article { display:grid; grid-template-columns:1fr 340px; gap:48px; align-items:start; }
+    .article-featured { background:var(--blanc); border:1px solid var(--border); overflow:hidden; text-decoration:none; color:var(--noir); display:block; }
+    .art-img { background:var(--gris-clair); height:260px; display:flex; align-items:center; justify-content:center; font-size:72px; }
+    .art-body { padding:28px 28px 32px; }
+    .art-tag { font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--rouge); margin-bottom:12px; }
+    .art-title { font-family:var(--ff-titre); font-size:26px; font-weight:700; line-height:1.2; margin-bottom:14px; }
+    .art-excerpt { font-size:14.5px; color:var(--gris-mid); line-height:1.7; margin-bottom:20px; }
+    .art-meta { font-size:12px; color:var(--gris-mid); display:flex; gap:10px; }
+    .art-read { display:inline-flex; align-items:center; gap:6px; font-size:13.5px; font-weight:600; color:var(--rouge); text-decoration:none; margin-top:18px; }
+    .article-featured:hover .art-title { color:var(--rouge); }
+
+    .coming-aside { display:flex; flex-direction:column; gap:16px; }
+    .coming-card { background:var(--blanc); border:1px solid var(--border); padding:20px; display:flex; flex-direction:column; gap:8px; position:relative; }
+    .coming-tag { font-size:10px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--gris-mid); }
+    .coming-title { font-family:var(--ff-titre); font-size:16px; font-weight:700; color:var(--gris-mid); line-height:1.3; }
+    .coming-badge { font-size:10px; font-weight:600; letter-spacing:0.07em; text-transform:uppercase; background:var(--gris-clair); color:var(--gris-mid); padding:3px 10px; display:inline-block; margin-top:auto; }
+
+    /* ── SECTION OUTILS ── */
+    .outils-home { background:var(--blanc); color:var(--noir); padding:72px 0; border-top:1px solid var(--border); }
+    .outils-home-head { display:flex; align-items:flex-end; justify-content:space-between; gap:24px; margin-bottom:52px; flex-wrap:wrap; }
+    .outils-home-head .sec-title { margin-bottom:0; }
+    .outils-home-head .sec-sub { margin-bottom:0; }
+    .outils-home-cta { font-size:13px; font-weight:600; color:var(--gris-mid); text-decoration:none; white-space:nowrap; border-bottom:1px solid var(--border); padding-bottom:2px; transition:color 0.15s,border-color 0.15s; flex-shrink:0; }
+    .outils-home-cta:hover { color:var(--noir); border-color:var(--noir); }
+    .outils-home-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--border); }
+    .outil-home-card { background:var(--blanc); padding:32px 28px 36px; text-decoration:none; color:var(--noir); display:flex; flex-direction:column; gap:16px; transition:background 0.2s; position:relative; overflow:hidden; }
+    .outil-home-card::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:var(--rouge); transform:scaleX(0); transform-origin:left; transition:transform 0.3s; }
+    .outil-home-card:hover { background:var(--beige); }
+    .outil-home-card:hover::before { transform:scaleX(1); }
+    .outil-num { font-size:11px; font-weight:700; letter-spacing:0.15em; color:var(--border); font-family:var(--ff-body); }
+    .outil-home-icon { font-size:28px; }
+    .outil-home-name { font-family:var(--ff-titre); font-size:18px; font-weight:700; line-height:1.2; color:var(--noir); }
+    .outil-home-desc { font-size:13px; color:var(--gris-mid); line-height:1.6; flex:1; }
+    .outil-home-arrow { font-size:13px; font-weight:600; color:var(--rouge); display:flex; align-items:center; gap:6px; margin-top:auto; transition:gap 0.2s; }
+    .outil-home-card:hover .outil-home-arrow { gap:10px; }
+
+    @media(max-width:1024px) { .silos-grid { grid-template-columns:repeat(2,1fr); } .first-article { grid-template-columns:1fr; } .outils-home-grid { grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:768px)  { .hero { min-height:70vh; } .hero-inner { padding:0 24px; } .hero-scroll { display:none; } }
+    @media(max-width:700px)  { .silos-grid { grid-template-columns:1fr; } .outils-home-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-top">
+    ✦ Premier article publié : <a href="/haccp/temperature-conservation-aliments/">Températures de conservation 2026 →</a>
+  </div>
+  <div class="nav-main">
+    <a href="/" class="logo">Pro<span>Restauration</span>.fr</a>
+    <nav>
+<a href="/haccp/">HACCP &amp; Hygiène</a>
+<a href="/gestion-restaurant/">Gestion &amp; Finances</a>
+<a href="/fiches-techniques/">Fiches techniques</a>
+<a href="/recrutement-restauration/">RH &amp; Recrutement</a>
+<a href="/equipements/">Équipements professionnels</a>
+<a href="/ouvrir-restaurant/">Ouvrir un restaurant</a>
+    </nav>
+    <div class="nav-cta">      <a href="/outils/" class="btn-primary">Outils gratuits ↗</a>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-mobile" id="navMobile" style="display:none" role="dialog" aria-label="Menu principal">
+  <a href="/haccp/">HACCP &amp; Hygiène</a>
+  <a href="/gestion-restaurant/">Gestion &amp; Finances</a>
+  <a href="/fiches-techniques/">Fiches techniques</a>
+  <a href="/recrutement-restauration/">RH &amp; Recrutement</a>
+  <a href="/equipements/">Équipements professionnels</a>
+  <a href="/ouvrir-restaurant/">Ouvrir un restaurant</a>
+  <a href="/outils/" class="nav-mobile-cta">Outils gratuits ↗</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      <span class="hero-eyebrow-line"></span>
+      <span>Le portail de référence des professionnels</span>
+    </div>
+    <h1>Tout ce qu'il faut pour gérer un <em>restaurant</em> sereinement.</h1>
+    <p class="hero-sub">Fiches techniques, conformité HACCP, gestion RH, recrutement, équipements professionnels : ProRestauration.fr accompagne les professionnels de la restauration au quotidien.</p>
+    <div class="hero-actions">
+      <a href="/outils/" class="btn-primary">Voir les outils gratuits ↗</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="hero-scroll-line"></div>
+    <span>Défiler</span>
+  </div>
+</section>
+
+
+<!-- PREMIER ARTICLE -->
+<section class="home-sec">
+  <div class="container">
+    <div class="sec-label">À la une</div>
+    <div class="sec-title">Premier article publié</div>
+    <div class="sec-sub">Le site grandit au fil des publications. Revenez chaque semaine pour découvrir de nouveaux guides.</div>
+
+    <div class="first-article">
+      <a class="article-featured" href="/haccp/temperature-conservation-aliments/">
+        <div class="art-img">🌡️</div>
+        <div class="art-body">
+          <div class="art-tag">HACCP · Réglementation</div>
+          <h2 class="art-title">Températures de conservation des aliments : tableau complet 2026</h2>
+          <p class="art-excerpt">Respecter les températures réglementaires est une obligation légale et la première ligne de défense contre les intoxications alimentaires. Tableau complet des normes en vigueur : froid, chaud, surgélation — tout ce qu'un restaurateur doit savoir.</p>
+          <div class="art-meta">
+            <span>📅 Mars 2026</span>
+            <span>·</span>
+            <span>⏱️ 9 min de lecture</span>
+            <span>·</span>
+            <span>📋 Tableau imprimable</span>
+          </div>
+          <span class="art-read">Lire l'article →</span>
+        </div>
+      </a>
+
+      <div class="coming-aside">
+        <p style="font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--gris-mid); margin-bottom:4px;">Prochains articles</p>
+        <div class="coming-card">
+          <div class="coming-tag">HACCP</div>
+          <div class="coming-title">Plan de Maîtrise Sanitaire : guide complet + modèle PDF</div>
+          <div class="coming-badge">À venir</div>
+        </div>
+        <div class="coming-card">
+          <div class="coming-tag">Gestion</div>
+          <div class="coming-title">Calculer son food cost : méthode et ratios</div>
+          <div class="coming-badge">À venir</div>
+        </div>
+        <div class="coming-card">
+          <div class="coming-tag">Fiches techniques</div>
+          <div class="coming-title">Créer une fiche technique professionnelle</div>
+          <div class="coming-badge">À venir</div>
+        </div>
+        <div class="coming-card">
+          <div class="coming-tag">RH</div>
+          <div class="coming-title">Convention collective CHR 2026</div>
+          <div class="coming-badge">À venir</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SILOS -->
+<section class="home-sec alt">
+  <div class="container">
+    <div class="sec-label">Explorer par thème</div>
+    <div class="sec-title">Tous les sujets qui comptent pour votre restaurant</div>
+    <div class="sec-sub">Des ressources organisées par domaine, enrichies semaine après semaine.</div>
+    <div class="silos-grid">
+      <a class="silo-card" href="/haccp/">
+        <div class="silo-icon">🛡️</div>
+        <div class="silo-title">HACCP & Hygiène alimentaire</div>
+        <div class="silo-desc">PMS, températures, contrôles sanitaires, traçabilité alimentaire, formations obligatoires.</div>
+        <div class="silo-links">
+          <span class="silo-link">Plan de Maîtrise Sanitaire</span>
+          <span class="silo-link">Températures de conservation</span>
+          <span class="silo-link">Contrôle sanitaire restaurant</span>
+        </div>
+      </a>
+      <a class="silo-card" href="/fiches-techniques/">
+        <div class="silo-icon">📋</div>
+        <div class="silo-title">Fiches techniques culinaires</div>
+        <div class="silo-desc">Fiches techniques pro avec calcul du coût de revient. Cuisine, pâtisserie, boulangerie.</div>
+        <div class="silo-links">
+          <span class="silo-link">Créer une fiche technique</span>
+          <span class="silo-link">Fiches sauces</span>
+          <span class="silo-link">Pâtisserie & desserts</span>
+        </div>
+      </a>
+      <a class="silo-card" href="/gestion-restaurant/">
+        <div class="silo-icon">📊</div>
+        <div class="silo-title">Gestion & Finances</div>
+        <div class="silo-desc">Food cost, gestion des stocks, ratios de rentabilité, prix de vente, prévisionnel.</div>
+        <div class="silo-links">
+          <span class="silo-link">Calculer son food cost</span>
+          <span class="silo-link">Gestion des stocks</span>
+          <span class="silo-link">Ratios de rentabilité</span>
+        </div>
+      </a>
+      <a class="silo-card" href="/recrutement-restauration/">
+        <div class="silo-icon">👥</div>
+        <div class="silo-title">RH & Recrutement</div>
+        <div class="silo-desc">Contrats, plannings, convention collective CHR, grilles de salaires, fiches de poste.</div>
+        <div class="silo-links">
+          <span class="silo-link">Convention collective CHR</span>
+          <span class="silo-link">Salaires cuisiniers 2026</span>
+          <span class="silo-link">Contrat saisonnier</span>
+        </div>
+      </a>
+      <a class="silo-card" href="/equipements/">
+        <div class="silo-icon">🔧</div>
+        <div class="silo-title">Équipements professionnels</div>
+        <div class="silo-desc">Fours, chambres froides, matériel de salle : guides d'achat et comparatifs.</div>
+        <div class="silo-links">
+          <span class="silo-link">Fours professionnels</span>
+          <span class="silo-link">Chambres froides</span>
+          <span class="silo-link">Logiciels de gestion</span>
+        </div>
+      </a>
+      <a class="silo-card" href="/ouvrir-restaurant/">
+        <div class="silo-icon">🏪</div>
+        <div class="silo-title">Ouvrir un restaurant</div>
+        <div class="silo-desc">Business plan, licences, financement, statut juridique et aides à la création.</div>
+        <div class="silo-links">
+          <span class="silo-link">Business plan restaurant</span>
+          <span class="silo-link">Licences et autorisations</span>
+          <span class="silo-link">Aides à la création 2026</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- OUTILS -->
+<section class="outils-home">
+  <div class="container">
+    <div class="outils-home-head">
+      <div>
+        <div class="sec-label">Outils gratuits</div>
+        <div class="sec-title">Des outils concrets, utilisables maintenant.</div>
+        <div class="sec-sub" style="margin-top:10px;">Calculateurs, générateurs et checklists — sans inscription.</div>
+      </div>
+      <a href="/outils/" class="outils-home-cta">Voir tous les outils →</a>
+    </div>
+    <div class="outils-home-grid">
+      <a class="outil-home-card" href="/outils/generateur-fiche-technique/">
+        <span class="outil-num">01</span>
+        <div class="outil-home-icon">📋</div>
+        <div class="outil-home-name">Générateur de fiche technique</div>
+        <div class="outil-home-desc">Créez vos fiches pro en ligne avec calcul du coût de revient automatique.</div>
+        <span class="outil-home-arrow">Accéder →</span>
+      </a>
+      <a class="outil-home-card" href="/outils/calculateur-food-cost/">
+        <span class="outil-num">02</span>
+        <div class="outil-home-icon">💶</div>
+        <div class="outil-home-name">Calculateur food cost</div>
+        <div class="outil-home-desc">Calculez instantanément le coût de revient et le prix de vente idéal de vos plats.</div>
+        <span class="outil-home-arrow">Accéder →</span>
+      </a>
+      <a class="outil-home-card" href="/outils/checklist-haccp/">
+        <span class="outil-num">03</span>
+        <div class="outil-home-icon">✅</div>
+        <div class="outil-home-name">Checklist HACCP</div>
+        <div class="outil-home-desc">Relevés de température, nettoyage, réception — checklists quotidiennes à imprimer.</div>
+        <span class="outil-home-arrow">Accéder →</span>
+      </a>
+      <a class="outil-home-card" href="/outils/planning-restaurant/">
+        <span class="outil-num">04</span>
+        <div class="outil-home-icon">📅</div>
+        <div class="outil-home-name">Planning d'équipe</div>
+        <div class="outil-home-desc">Modèle hebdomadaire Excel & PDF pour organiser les horaires de votre brigade.</div>
+        <span class="outil-home-arrow">Accéder →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid container">
+    <div>
+      <a href="/" class="footer-logo">Pro<span>Restauration</span>.fr</a>
+      <p class="footer-tagline">Le portail de référence des professionnels de la restauration, de l'hôtellerie et de la cuisine collective en France.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Ressources</h4>
+      <ul>
+        <li><a href="/haccp/">HACCP</a></li>
+        <li><a href="/fiches-techniques/">Fiches techniques</a></li>
+        <li><a href="/gestion-restaurant/">Gestion & finances</a></li>
+        <li><a href="/recrutement-restauration/">RH & Recrutement</a></li>
+        <li><a href="/ouvrir-restaurant/">Ouvrir un restaurant</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Outils</h4>
+      <ul>
+        <li><a href="/outils/generateur-fiche-technique/">Générateur fiches</a></li>
+        <li><a href="/outils/calculateur-food-cost/">Calculateur food cost</a></li>
+        <li><a href="/outils/checklist-haccp/">Checklist HACCP</a></li>
+        <li><a href="/outils/planning-restaurant/">Planning équipe</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>À propos</h4>
+      <ul>
+        <li><a href="/a-propos/">Qui sommes-nous ?</a></li>
+        <li><a href="/contact/">Contact</a></li>
+
+        <li><a href="/mentions-legales/">Mentions légales</a></li>
+        <li><a href="/politique-confidentialite/">Confidentialité</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <span>© 2026 ProRestauration.fr · Tous droits réservés</span>
+    <div class="footer-links">
+      <a href="/politique-confidentialite/">Confidentialité</a>
+      <a href="/mentions-legales/">Mentions légales</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var burger = document.getElementById('navBurger');
+  var menu   = document.getElementById('navMobile');
+  if (!burger || !menu) return;
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    menu.style.display = open ? 'flex' : 'none';
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('open');
+      menu.style.display = 'none';
+      burger.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+})();
+</script>
+</body>
+</html>
