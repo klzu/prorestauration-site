@@ -68,3 +68,27 @@
 /* Responsive */
 @media(max-width:1024px){.pillar-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.pillar-grid{grid-template-columns:1fr}.pillar-stats{gap:20px}.pillar-tool-cta-inner{flex-direction:column}.ptc-actions{width:100%}.ptc-actions .btn-primary,.ptc-actions .btn-outline-white{flex:1;justify-content:center}}
+
+/* ===== SEO SILOS ===== */
+.sidebar-silo{background:var(--gris-clair);border:1px solid var(--border);padding:20px}
+.sidebar-silo h3{font-family:var(--ff-titre);font-size:15px;font-weight:700;margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--rouge);display:inline-block}
+.silo-pillar-link{margin-bottom:12px}
+.silo-pillar-link a{font-size:12.5px;font-weight:600;color:var(--rouge);text-decoration:none;letter-spacing:0.01em}
+.silo-pillar-link a:hover{text-decoration:underline}
+.silo-nav{list-style:none;display:flex;flex-direction:column;gap:0;border-top:1px solid var(--border)}
+.silo-nav li{font-size:13px;padding:8px 0;border-bottom:1px solid var(--border)}
+.silo-nav li a{color:var(--gris-fonce);text-decoration:none;transition:color 0.15s}
+.silo-nav li a:hover{color:var(--rouge)}
+.silo-nav li.silo-current{color:var(--rouge);font-weight:600;font-size:13px}
+/* Cross-silo section */
+.silo-cross{background:var(--beige);border-top:1px solid var(--border);padding:48px 0}
+.silo-cross-inner{max-width:1260px;margin:0 auto;padding:0 24px}
+.silo-cross-label{font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--rouge);margin-bottom:16px}
+.silo-cross-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.silo-cross-card{background:var(--blanc);border:1px solid var(--border);padding:20px 22px;text-decoration:none;color:var(--noir);display:flex;flex-direction:column;gap:6px;transition:border-color 0.2s,transform 0.15s}
+.silo-cross-card:hover{border-color:var(--rouge);transform:translateY(-2px)}
+.silo-cross-tool{border-left:3px solid var(--rouge)}
+.scc-name{font-family:var(--ff-titre);font-size:15px;font-weight:700;color:var(--noir)}
+.scc-desc{font-size:12.5px;color:var(--rouge);font-weight:500}
+@media(max-width:900px){.silo-cross-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.silo-cross-grid{grid-template-columns:1fr}}
