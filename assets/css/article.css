@@ -26,9 +26,17 @@
 .page-content strong { font-weight: 600; }
 
 /* ── INFO BOXES ──────────────────────────────── */
-.info-box { display: flex; gap: 16px; background: #FEF3F2; border-left: 3px solid var(--rouge); padding: 16px 20px; margin: 24px 0; font-size: 14.5px; line-height: 1.65; }
+.info-box { display: flex; gap: 16px; background: #FEF3F2; border-left: 3px solid var(--rouge); padding: 16px 20px; margin: 24px 0; font-size: 14.5px; line-height: 1.65; border-radius: 0 4px 4px 0; }
 .info-tip { background: #F0F9F5; border-left-color: #1D9E75; }
+.info-bon { background: #EFF6FF; border-left-color: #2563EB; }
 .info-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+
+/* ── IN-ARTICLE CTA ──────────────────────────── */
+.in-article-cta { background: var(--noir); color: var(--blanc); padding: 28px 32px; margin: 36px 0; border-radius: 4px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.in-article-cta-text { flex: 1; min-width: 200px; }
+.in-article-cta-text strong { display: block; font-family: var(--ff-titre); font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+.in-article-cta-text span { font-size: 14px; opacity: 0.7; }
+.in-article-cta .btn-primary { white-space: nowrap; flex-shrink: 0; }
 
 /* ── TABLEAUX ────────────────────────────────── */
 .table-wrapper { overflow-x: auto; margin: 24px 0; }
