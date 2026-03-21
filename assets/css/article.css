@@ -80,3 +80,20 @@
 @media (max-width: 700px) {
   .related-grid { grid-template-columns: 1fr; }
 }
+
+/* ── SOMMAIRE ARTICLE (TOC) ──────────────────── */
+.article-toc { background: var(--gris-clair); border-left: 3px solid var(--rouge); padding: 20px 24px; margin: 0 0 40px; }
+.article-toc strong { display: block; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gris-mid); margin-bottom: 12px; }
+.article-toc ol { padding-left: 18px; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+.article-toc ol li a { font-size: 14px; color: var(--gris-fonce); text-decoration: none; }
+.article-toc ol li a:hover { color: var(--rouge); }
+
+/* ── CARTE VIDÉO YOUTUBE ─────────────────────── */
+.video-embed-card { background: #0f0f0f; border-radius: 6px; padding: 24px 28px; margin: 32px 0; display: flex; align-items: center; gap: 20px; }
+.video-card-inner { display: flex; align-items: center; gap: 20px; width: 100%; }
+.video-card-icon { width: 52px; height: 52px; background: #FF0000; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; flex-shrink: 0; }
+.video-card-text strong { display: block; color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 5px; }
+.video-card-text span { color: rgba(255,255,255,0.6); font-size: 13px; line-height: 1.5; }
+@media (max-width: 600px) {
+  .video-card-inner { flex-direction: column; align-items: flex-start; }
+}
