@@ -4,7 +4,7 @@
   <!-- ══ ACCUEIL ══ -->
   <url>
     <loc>https://www.prorestauration.fr/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- ══ PAGES PILIER (catégories) ══ -->
   <url>
     <loc>https://www.prorestauration.fr/haccp/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://www.prorestauration.fr/ouvrir-restaurant/</loc>
-    <lastmod>2026-03-01</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -56,19 +56,19 @@
   <!-- ══ ARTICLES HACCP ══ -->
   <url>
     <loc>https://www.prorestauration.fr/haccp/temperature-conservation-aliments/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.prorestauration.fr/haccp/plan-de-maitrise-sanitaire/</loc>
-    <lastmod>2026-03-01</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.prorestauration.fr/haccp/formation-haccp/</loc>
-    <lastmod>2026-03-01</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -258,9 +258,9 @@
   </url>
   <url>
     <loc>https://www.prorestauration.fr/ouvrir-restaurant/aide-creation-restaurant/</loc>
-    <lastmod>2026-03-01</lastmod>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
 
   <!-- ══ OUTILS ══ -->
