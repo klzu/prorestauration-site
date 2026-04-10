@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page introuvable (404) | ProRestauration.fr</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://www.prorestauration.fr/404.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css?v7">
+  <style>
+    .error-page {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      padding: 64px 0;
+    }
+    .error-inner {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 24px;
+      text-align: center;
+    }
+    .error-code {
+      font-family: var(--ff-titre);
+      font-size: clamp(96px, 20vw, 160px);
+      font-weight: 900;
+      line-height: 1;
+      color: var(--gris-clair);
+      letter-spacing: -0.04em;
+      margin-bottom: 8px;
+      position: relative;
+    }
+    .error-code::after {
+      content: '404';
+      position: absolute;
+      inset: 0;
+      color: transparent;
+      -webkit-text-stroke: 2px var(--border);
+    }
+    .error-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--rouge);
+      margin-bottom: 20px;
+    }
+    .error-title {
+      font-family: var(--ff-titre);
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .error-desc {
+      font-size: 15px;
+      color: var(--gris-mid);
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+    .error-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+    }
+    .error-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+    .error-links-title {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gris-mid);
+      margin-bottom: 20px;
+    }
+    .error-links {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      text-align: left;
+    }
+    .error-link-card {
+      border: 1px solid var(--border);
+      padding: 14px 16px;
+      text-decoration: none;
+      color: var(--noir);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .error-link-card:hover {
+      border-color: var(--rouge);
+      transform: translateY(-1px);
+    }
+    .error-link-tag {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--rouge);
+    }
+    .error-link-name {
+      font-family: var(--ff-titre);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    @media (max-width: 480px) {
+      .error-links { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-top">✦ Nouveau guide : <a href="/recrutement-restauration/grille-salaire-cuisinier/">Grille de salaire cuisinier 2026 — tous les niveaux CHR →</a></div>
+  <div class="nav-main">
+    <a href="/" class="logo">Pro<span>Restauration</span>.fr</a>
+    <nav>
+      <a href="/haccp/">HACCP &amp; Hygiène</a>
+      <a href="/gestion-restaurant/">Gestion &amp; Finances</a>
+      <a href="/fiches-techniques/">Fiches techniques</a>
+      <a href="/recrutement-restauration/">RH &amp; Recrutement</a>
+      <a href="/equipements/">Équipements professionnels</a>
+      <a href="/ouvrir-restaurant/">Ouvrir un restaurant</a>
+    </nav>
+    <div class="nav-cta"><a href="/outils/" class="btn-primary">Outils gratuits ↗</a></div>
+    <button class="nav-burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-mobile" id="navMobile" style="display:none" role="dialog" aria-label="Menu principal">
+  <a href="/haccp/">HACCP &amp; Hygiène</a>
+  <a href="/gestion-restaurant/">Gestion &amp; Finances</a>
+  <a href="/fiches-techniques/">Fiches techniques</a>
+  <a href="/recrutement-restauration/">RH &amp; Recrutement</a>
+  <a href="/equipements/">Équipements professionnels</a>
+  <a href="/ouvrir-restaurant/">Ouvrir un restaurant</a>
+  <a href="/outils/" class="nav-mobile-cta">Outils gratuits ↗</a>
+</div>
+
+<main class="error-page">
+  <div class="error-inner">
+
+    <div class="error-code" aria-hidden="true"></div>
+    <div class="error-label">Page introuvable</div>
+    <h1 class="error-title">Cette page n'existe pas ou a été déplacée.</h1>
+    <p class="error-desc">L'URL que vous avez demandée est introuvable. Elle a peut-être été supprimée, renommée ou n'a jamais existé. Utilisez les liens ci-dessous pour trouver ce que vous cherchez.</p>
+
+    <div class="error-actions">
+      <a href="/" class="btn-primary">← Retour à l'accueil</a>
+      <a href="/outils/" class="btn-outline">Voir les outils gratuits</a>
+    </div>
+
+    <hr class="error-divider">
+
+    <div class="error-links-title">Guides les plus consultés</div>
+    <div class="error-links">
+      <a class="error-link-card" href="/recrutement-restauration/grille-salaire-cuisinier/">
+        <span class="error-link-tag">RH</span>
+        <span class="error-link-name">Grille de salaire cuisinier 2026</span>
+      </a>
+      <a class="error-link-card" href="/haccp/temperature-conservation-aliments/">
+        <span class="error-link-tag">HACCP</span>
+        <span class="error-link-name">Températures de conservation des aliments</span>
+      </a>
+      <a class="error-link-card" href="/recrutement-restauration/convention-collective-chr/">
+        <span class="error-link-tag">RH</span>
+        <span class="error-link-name">Convention collective CHR 2026</span>
+      </a>
+      <a class="error-link-card" href="/gestion-restaurant/calcul-food-cost/">
+        <span class="error-link-tag">Gestion</span>
+        <span class="error-link-name">Calcul du food cost : formules et ratios</span>
+      </a>
+      <a class="error-link-card" href="/haccp/formation-haccp/">
+        <span class="error-link-tag">HACCP</span>
+        <span class="error-link-name">Formation HACCP obligatoire 2026</span>
+      </a>
+      <a class="error-link-card" href="/ouvrir-restaurant/aide-creation-restaurant/">
+        <span class="error-link-tag">Ouvrir un restaurant</span>
+        <span class="error-link-name">Aides pour ouvrir un restaurant 2026</span>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-grid container">
+    <div><a href="/" class="footer-logo">Pro<span>Restauration</span>.fr</a>
+      <p class="footer-tagline">Le portail de référence des professionnels de la restauration, de l'hôtellerie et de la cuisine collective en France.</p>
+    </div>
+    <div class="footer-col"><h4>Ressources</h4><ul>
+      <li><a href="/haccp/">HACCP &amp; Hygiène</a></li>
+      <li><a href="/gestion-restaurant/">Gestion &amp; Finances</a></li>
+      <li><a href="/fiches-techniques/">Fiches techniques</a></li>
+      <li><a href="/recrutement-restauration/">RH &amp; Recrutement</a></li>
+      <li><a href="/ouvrir-restaurant/">Ouvrir un restaurant</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Outils gratuits</h4><ul>
+      <li><a href="/outils/generateur-fiche-technique/">Générateur fiches techniques</a></li>
+      <li><a href="/outils/calculateur-food-cost/">Calculateur food cost</a></li>
+      <li><a href="/outils/checklist-haccp/">Checklist HACCP</a></li>
+      <li><a href="/outils/simulateur-rentabilite/">Simulateur rentabilité</a></li>
+      <li><a href="/outils/planning-restaurant/">Planning équipe</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>À propos</h4><ul>
+      <li><a href="/a-propos/">Qui sommes-nous ?</a></li>
+      <li><a href="/contact/">Contact</a></li>
+      <li><a href="/mentions-legales/">Mentions légales</a></li>
+      <li><a href="/politique-confidentialite/">Confidentialité</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom container">
+    <span>© 2026 ProRestauration.fr · Tous droits réservés</span>
+    <div class="footer-links">
+      <a href="/politique-confidentialite/">Confidentialité</a>
+      <a href="/mentions-legales/">Mentions légales</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var burger = document.getElementById('navBurger');
+  var menu   = document.getElementById('navMobile');
+  if (!burger || !menu) return;
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    menu.style.display = open ? 'flex' : 'none';
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('open');
+      menu.style.display = 'none';
+      burger.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+})();
+</script>
+</body>
+</html>
