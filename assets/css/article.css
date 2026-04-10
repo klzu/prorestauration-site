@@ -36,9 +36,9 @@
 .page-content strong { font-weight: 600; }
 
 /* ── INFO BOXES ──────────────────────────────── */
-.info-box { display: flex; gap: 16px; background: #FEF3F2; border-left: 3px solid var(--rouge); padding: 16px 20px; margin: 24px 0; font-size: 14.5px; line-height: 1.65; border-radius: 0 4px 4px 0; }
-.info-tip { background: #F0F9F5; border-left-color: #1D9E75; }
-.info-bon { background: #EFF6FF; border-left-color: #2563EB; }
+.info-box { display: flex; gap: 16px; background: var(--info-alert-bg); border-left: 3px solid var(--rouge); padding: 16px 20px; margin: 24px 0; font-size: 14.5px; line-height: 1.65; border-radius: 0 4px 4px 0; }
+.info-tip { background: var(--info-tip-bg); border-left-color: var(--info-tip-border); }
+.info-bon { background: var(--info-bon-bg); border-left-color: var(--info-bon-border); }
 .info-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
 
 /* ── IN-ARTICLE CTA ──────────────────────────── */
@@ -59,13 +59,24 @@
 .data-table strong { color: var(--rouge); }
 .table-note { font-size: 12px; color: var(--gris-mid); font-style: italic; margin-top: 8px; }
 
+/* ── VARIABLES COULEURS FONCTIONNELLES ───────── */
+:root {
+  --temp-froid-bg:   #D6EBF7; --temp-froid-text:  #0C447C;
+  --temp-danger-bg:  #FEE2E2; --temp-danger-text: #9B1C1C;
+  --temp-chaud-bg:   #FDEBD0; --temp-chaud-text:  #7C2D12;
+  --info-alert-bg:   #FEF3F2;
+  --info-tip-bg:     #F0F9F5; --info-tip-border:  #1D9E75;
+  --info-bon-bg:     #EFF6FF; --info-bon-border:  #2563EB;
+  --video-play-bg:   #FF0000;
+}
+
 /* ── VISUALISATION TEMPÉRATURES ──────────────── */
 .temp-visual { margin: 28px 0; }
 .temp-bar { display: flex; border-radius: 4px; overflow: hidden; height: 80px; }
 .temp-zone { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; font-size: 12px; font-weight: 600; }
-.temp-froid { background: #D6EBF7; color: #0C447C; }
-.temp-danger { background: #FEE2E2; color: #9B1C1C; flex: 2; }
-.temp-chaud { background: #FDEBD0; color: #7C2D12; }
+.temp-froid  { background: var(--temp-froid-bg);  color: var(--temp-froid-text); }
+.temp-danger { background: var(--temp-danger-bg); color: var(--temp-danger-text); flex: 2; }
+.temp-chaud  { background: var(--temp-chaud-bg);  color: var(--temp-chaud-text); }
 .temp-label { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; }
 .temp-value { font-size: 15px; font-weight: 700; }
 
@@ -110,7 +121,7 @@
 /* ── CARTE VIDÉO YOUTUBE ─────────────────────── */
 .video-embed-card { background: #0f0f0f; border-radius: 6px; padding: 24px 28px; margin: 32px 0; display: flex; align-items: center; gap: 20px; }
 .video-card-inner { display: flex; align-items: center; gap: 20px; width: 100%; }
-.video-card-icon { width: 52px; height: 52px; background: #FF0000; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; flex-shrink: 0; }
+.video-card-icon { width: 52px; height: 52px; background: var(--video-play-bg); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; flex-shrink: 0; }
 .video-card-text strong { display: block; color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 5px; }
 .video-card-text span { color: rgba(255,255,255,0.6); font-size: 13px; line-height: 1.5; }
 @media (max-width: 600px) {

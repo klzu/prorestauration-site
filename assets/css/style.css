@@ -125,3 +125,17 @@ nav a:focus-visible { outline-offset: -3px; }
 .p-card-cat   { font-size: 11px; }
 .p-card-badge { font-size: 11px; }
 .p-card-meta  { font-size: 12px; }
+
+/* ── FAQ UNIFIÉ : pilier → même style +/− que les articles ── */
+/* Masque le texte brut du span, affiche via ::before */
+.faq-icon { font-size: 0 !important; width: 24px; flex-shrink: 0; }
+.faq-icon::before {
+  content: '+';
+  font-size: 20px;
+  color: var(--rouge);
+  font-family: var(--ff-body);
+  font-weight: 300;
+  line-height: 1;
+}
+.faq-item.open .faq-icon { transform: none !important; }
+.faq-item.open .faq-icon::before { content: '−'; }
