@@ -78,6 +78,15 @@
 .faq-item[open] summary::after { content: '−'; }
 .faq-item p { padding: 0 0 16px; font-size: 15px; color: var(--gris-mid); line-height: 1.7; }
 
+/* ── BLOC AUTEUR ─────────────────────────────── */
+.author-box { display: flex; gap: 16px; align-items: flex-start; background: var(--gris-clair); border: 1px solid var(--border); padding: 20px 24px; margin: 48px 0 0; }
+.author-avatar { width: 48px; height: 48px; background: var(--noir); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; flex-shrink: 0; }
+.author-info { flex: 1; }
+.author-name { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+.author-name a { color: var(--noir); text-decoration: none; }
+.author-name a:hover { color: var(--rouge); }
+.author-desc { font-size: 13.5px; color: var(--gris-mid); line-height: 1.6; }
+
 /* ── ARTICLES CONNEXES ───────────────────────── */
 .related-articles { margin-top: 48px; padding-top: 32px; border-top: 2px solid var(--border); }
 .related-articles h3 { font-family: var(--ff-titre); font-size: 20px; font-weight: 700; margin-bottom: 20px; }
