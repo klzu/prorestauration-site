@@ -174,15 +174,17 @@
 
     /* Silos */
     .silos-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
-    .silo-card { background:var(--blanc); border:1px solid var(--border); padding:26px; text-decoration:none; color:var(--noir); display:flex; flex-direction:column; gap:12px; transition:border-color 0.2s,transform 0.2s; position:relative; overflow:hidden; }
-    .silo-card::after { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--rouge); transform:scaleX(0); transition:transform 0.25s; transform-origin:left; }
+    .silo-card { background:var(--blanc); border:1px solid var(--border); padding:26px; color:var(--noir); display:flex; flex-direction:column; gap:12px; transition:border-color 0.2s,transform 0.2s; position:relative; overflow:hidden; }
+    .silo-card::before { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--rouge); transform:scaleX(0); transition:transform 0.25s; transform-origin:left; }
     .silo-card:hover { border-color:var(--rouge); transform:translateY(-3px); }
-    .silo-card:hover::after { transform:scaleX(1); }
+    .silo-card:hover::before { transform:scaleX(1); }
+    .silo-card-link { text-decoration:none; color:inherit; }
+    .silo-card-link::after { content:''; position:absolute; inset:0; }
     .silo-icon { font-size:30px; width:52px; height:52px; background:var(--gris-clair); display:flex; align-items:center; justify-content:center; }
     .silo-title { font-family:var(--ff-titre); font-size:19px; font-weight:700; line-height:1.2; }
     .silo-desc { font-size:13.5px; color:var(--gris-mid); line-height:1.65; }
     .silo-links { display:flex; flex-direction:column; gap:6px; padding-top:8px; border-top:1px solid var(--border); }
-    .silo-link { font-size:13px; color:var(--gris-fonce); text-decoration:none; display:flex; align-items:center; gap:5px; }
+    .silo-link { font-size:13px; color:var(--gris-fonce); text-decoration:none; display:flex; align-items:center; gap:5px; position:relative; z-index:1; }
     .silo-link:hover { color:var(--rouge); }
     .silo-link::before { content:'→'; color:var(--rouge); font-size:11px; }
 
@@ -373,66 +375,66 @@
     <div class="sec-title">Tous les sujets qui comptent pour votre restaurant</div>
     <div class="sec-sub">Des ressources organisées par domaine, enrichies semaine après semaine.</div>
     <div class="silos-grid">
-      <a class="silo-card" href="/haccp/">
+      <div class="silo-card">
         <div class="silo-icon">🛡️</div>
-        <div class="silo-title">HACCP & Hygiène alimentaire</div>
+        <div class="silo-title"><a class="silo-card-link" href="/haccp/">HACCP &amp; Hygiène alimentaire</a></div>
         <div class="silo-desc">PMS, températures, contrôles sanitaires, traçabilité alimentaire, formations obligatoires.</div>
         <div class="silo-links">
-          <span class="silo-link">Plan de Maîtrise Sanitaire</span>
-          <span class="silo-link">Températures de conservation</span>
-          <span class="silo-link">Formation HACCP obligatoire</span>
+          <a class="silo-link" href="/haccp/plan-de-maitrise-sanitaire/">Plan de Maîtrise Sanitaire</a>
+          <a class="silo-link" href="/haccp/temperature-conservation-aliments/">Températures de conservation</a>
+          <a class="silo-link" href="/haccp/formation-haccp/">Formation HACCP obligatoire</a>
         </div>
-      </a>
-      <a class="silo-card" href="/fiches-techniques/">
+      </div>
+      <div class="silo-card">
         <div class="silo-icon">📋</div>
-        <div class="silo-title">Fiches techniques culinaires</div>
+        <div class="silo-title"><a class="silo-card-link" href="/fiches-techniques/">Fiches techniques culinaires</a></div>
         <div class="silo-desc">Fiches techniques pro avec calcul du coût de revient. Cuisine, pâtisserie, boulangerie.</div>
         <div class="silo-links">
-          <span class="silo-link">Créer une fiche technique</span>
-          <span class="silo-link">Fiches sauces</span>
-          <span class="silo-link">Pâtisserie &amp; desserts</span>
+          <a class="silo-link" href="/fiches-techniques/fiche-technique-restauration/">Créer une fiche technique</a>
+          <a class="silo-link" href="/fiches-techniques/sauces/">Fiches sauces</a>
+          <a class="silo-link" href="/fiches-techniques/patisserie/">Pâtisserie &amp; desserts</a>
         </div>
-      </a>
-      <a class="silo-card" href="/gestion-restaurant/">
+      </div>
+      <div class="silo-card">
         <div class="silo-icon">📊</div>
-        <div class="silo-title">Gestion &amp; Finances</div>
+        <div class="silo-title"><a class="silo-card-link" href="/gestion-restaurant/">Gestion &amp; Finances</a></div>
         <div class="silo-desc">Food cost, gestion des stocks, ratios de rentabilité, prix de vente, prévisionnel.</div>
         <div class="silo-links">
-          <span class="silo-link">Calculer son food cost</span>
-          <span class="silo-link">Gestion des stocks</span>
-          <span class="silo-link">Ratios de rentabilité</span>
+          <a class="silo-link" href="/gestion-restaurant/calcul-food-cost/">Calculer son food cost</a>
+          <a class="silo-link" href="/gestion-restaurant/gestion-stocks-restaurant/">Gestion des stocks</a>
+          <a class="silo-link" href="/gestion-restaurant/ratios-rentabilite/">Ratios de rentabilité</a>
         </div>
-      </a>
-      <a class="silo-card" href="/recrutement-restauration/">
+      </div>
+      <div class="silo-card">
         <div class="silo-icon">👥</div>
-        <div class="silo-title">RH &amp; Recrutement</div>
+        <div class="silo-title"><a class="silo-card-link" href="/recrutement-restauration/">RH &amp; Recrutement</a></div>
         <div class="silo-desc">Contrats, plannings, convention collective CHR, grilles de salaires, fiches de poste.</div>
         <div class="silo-links">
-          <span class="silo-link">Convention collective CHR</span>
-          <span class="silo-link">Salaires cuisiniers 2026</span>
-          <span class="silo-link">Contrat saisonnier</span>
+          <a class="silo-link" href="/recrutement-restauration/convention-collective-chr/">Convention collective CHR</a>
+          <a class="silo-link" href="/recrutement-restauration/grille-salaire-cuisinier/">Salaires cuisiniers 2026</a>
+          <a class="silo-link" href="/recrutement-restauration/contrat-saisonnier-restauration/">Contrat saisonnier</a>
         </div>
-      </a>
-      <a class="silo-card" href="/equipements/">
+      </div>
+      <div class="silo-card">
         <div class="silo-icon">🔧</div>
-        <div class="silo-title">Équipements professionnels</div>
+        <div class="silo-title"><a class="silo-card-link" href="/equipements/">Équipements professionnels</a></div>
         <div class="silo-desc">Fours, chambres froides, matériel de salle : guides d'achat et comparatifs.</div>
         <div class="silo-links">
-          <span class="silo-link">Fours professionnels</span>
-          <span class="silo-link">Chambres froides</span>
-          <span class="silo-link">Logiciels de gestion</span>
+          <a class="silo-link" href="/equipements/four-professionnel/">Fours professionnels</a>
+          <a class="silo-link" href="/equipements/chambre-froide/">Chambres froides</a>
+          <a class="silo-link" href="/equipements/logiciel-gestion-restaurant/">Logiciels de gestion</a>
         </div>
-      </a>
-      <a class="silo-card" href="/ouvrir-restaurant/">
+      </div>
+      <div class="silo-card">
         <div class="silo-icon">🏪</div>
-        <div class="silo-title">Ouvrir un restaurant</div>
+        <div class="silo-title"><a class="silo-card-link" href="/ouvrir-restaurant/">Ouvrir un restaurant</a></div>
         <div class="silo-desc">Business plan, licences, financement, statut juridique et aides à la création.</div>
         <div class="silo-links">
-          <span class="silo-link">Business plan restaurant</span>
-          <span class="silo-link">Licences et autorisations</span>
-          <span class="silo-link">Aides à la création 2026</span>
+          <a class="silo-link" href="/ouvrir-restaurant/business-plan-restaurant/">Business plan restaurant</a>
+          <a class="silo-link" href="/ouvrir-restaurant/licence-restaurant/">Licences et autorisations</a>
+          <a class="silo-link" href="/ouvrir-restaurant/aide-creation-restaurant/">Aides à la création 2026</a>
         </div>
-      </a>
+      </div>
     </div>
   </div>
 </section>
