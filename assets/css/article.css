@@ -8,11 +8,11 @@
 .article-meta-bar { display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--gris-mid); flex-wrap: wrap; }
 .article-meta-bar .sep { color: var(--border); }
 .article-header-img { margin-top: 24px; border-radius: 4px; overflow: hidden; }
-.article-header-img img { width: 100%; height: auto; display: block; }
+.article-header-img img { display: block; max-width: 100%; height: auto; width: auto; }
 
 /* ── IMAGES DANS L'ARTICLE ───────────────────── */
 .article-figure { margin: 28px 0; }
-.article-figure img { width: 100%; height: auto; display: block; border-radius: 4px; }
+.article-figure img { display: block; max-width: 100%; height: auto; width: auto; border-radius: 4px; }
 .article-figure figcaption { font-size: 13px; color: var(--gris-mid); margin-top: 8px; font-style: italic; text-align: center; }
 
 /* ── SOMMAIRE ────────────────────────────────── */
