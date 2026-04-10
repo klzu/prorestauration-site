@@ -190,6 +190,8 @@
     .first-article { display:grid; grid-template-columns:1fr 340px; gap:48px; align-items:start; }
     .article-featured { background:var(--blanc); border:1px solid var(--border); overflow:hidden; text-decoration:none; color:var(--noir); display:block; }
     .art-img { background:var(--gris-clair); height:260px; display:flex; align-items:center; justify-content:center; font-size:72px; overflow:hidden; }
+    .featured-stack { display:flex; flex-direction:column; gap:24px; }
+    .featured-stack .art-img { height:200px; }
     .art-img img { width:100%; height:100%; object-fit:cover; object-position:center; display:block; }
     .art-body { padding:28px 28px 32px; }
     .art-tag { font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--rouge); margin-bottom:12px; }
@@ -293,29 +295,60 @@
     <div class="sec-sub">Réglementation, gestion, RH : des contenus vérifiés, mis à jour et directement applicables.</div>
 
     <div class="first-article">
-      <a class="article-featured" href="/haccp/temperature-conservation-aliments/">
-        <div class="art-img"><img src="/assets/images/temperature-conservation-aliments-hero.webp" alt="Températures de conservation des aliments en restauration — normes HACCP 2026" loading="lazy"></div>
-        <div class="art-body">
-          <div class="art-tag">HACCP · Réglementation</div>
-          <h2 class="art-title">Températures de conservation des aliments : le guide complet 2026</h2>
-          <p class="art-excerpt">Tableaux réglementaires froid/chaud, températures de cuisson par aliment (ANSES), règles de refroidissement rapide, matériel et sanctions : tout ce qu'un restaurateur doit maîtriser pour ne jamais être pris en défaut lors d'un contrôle.</p>
-          <div class="art-meta">
-            <span>📅 Mars 2026</span>
-            <span>·</span>
-            <span>⏱️ 15 min de lecture</span>
-            <span>·</span>
-            <span>📋 Tableaux imprimables inclus</span>
+      <div class="featured-stack">
+
+        <a class="article-featured" href="/recrutement-restauration/grille-salaire-cuisinier/">
+          <div class="art-img"><img src="/assets/images/grille-salaire-cuisinier-hero.webp" alt="Grille de salaire cuisinier 2026 — minima CHR, brut et net" loading="lazy"></div>
+          <div class="art-body">
+            <div class="art-tag">RH &amp; Recrutement · Salaires</div>
+            <h2 class="art-title">Grille de salaire cuisinier 2026 : de commis à chef de cuisine — brut, net, 35h et 39h</h2>
+            <p class="art-excerpt">Tous les minima CHR par niveau et échelon, conversion brut/net, comparatif par type d'établissement (brasserie, gastronomique, collective), grille apprentis et coût employeur.</p>
+            <div class="art-meta">
+              <span>📅 Avril 2026</span>
+              <span>·</span>
+              <span>⏱️ 17 min de lecture</span>
+              <span>·</span>
+              <span>📋 8 tableaux de salaires inclus</span>
+            </div>
+            <span class="art-read">Lire l'article →</span>
           </div>
-          <span class="art-read">Lire l'article →</span>
-        </div>
-      </a>
+        </a>
+
+        <a class="article-featured" href="/haccp/temperature-conservation-aliments/">
+          <div class="art-img"><img src="/assets/images/temperature-conservation-aliments-hero.webp" alt="Températures de conservation des aliments en restauration — normes HACCP 2026" loading="lazy"></div>
+          <div class="art-body">
+            <div class="art-tag">HACCP · Réglementation</div>
+            <h2 class="art-title">Températures de conservation des aliments : le guide complet 2026</h2>
+            <p class="art-excerpt">Tableaux réglementaires froid/chaud, températures de cuisson par aliment (ANSES), règles de refroidissement rapide, matériel et sanctions : tout ce qu'un restaurateur doit maîtriser pour ne jamais être pris en défaut lors d'un contrôle.</p>
+            <div class="art-meta">
+              <span>📅 Mars 2026</span>
+              <span>·</span>
+              <span>⏱️ 15 min de lecture</span>
+              <span>·</span>
+              <span>📋 Tableaux imprimables inclus</span>
+            </div>
+            <span class="art-read">Lire l'article →</span>
+          </div>
+        </a>
+
+      </div>
 
       <div class="coming-aside">
         <p style="font-size:12px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--gris-mid); margin-bottom:4px;">Autres guides publiés</p>
 
-        <a href="/haccp/formation-haccp/" class="coming-card" style="text-decoration:none; color:inherit;">
-          <div class="coming-tag">HACCP</div>
-          <div class="coming-title">Formation HACCP obligatoire : durée, prix, financement, dispenses</div>
+        <a href="/recrutement-restauration/convention-collective-chr/" class="coming-card" style="text-decoration:none; color:inherit;">
+          <div class="coming-tag">RH</div>
+          <div class="coming-title">Convention collective CHR 2026 : grille de salaires et droits</div>
+          <div class="coming-badge">Publié</div>
+        </a>
+        <a href="/gestion-restaurant/calcul-food-cost/" class="coming-card" style="text-decoration:none; color:inherit;">
+          <div class="coming-tag">Gestion</div>
+          <div class="coming-title">Calcul du food cost : formules, ratios et simulateur 2026</div>
+          <div class="coming-badge">Publié</div>
+        </a>
+        <a href="/ouvrir-restaurant/aide-creation-restaurant/" class="coming-card" style="text-decoration:none; color:inherit;">
+          <div class="coming-tag">Ouvrir un restaurant</div>
+          <div class="coming-title">Aides pour ouvrir un restaurant 2026 : toutes les aides disponibles</div>
           <div class="coming-badge">Publié</div>
         </a>
         <a href="/haccp/plan-de-maitrise-sanitaire/" class="coming-card" style="text-decoration:none; color:inherit;">
@@ -323,25 +356,10 @@
           <div class="coming-title">Plan de Maîtrise Sanitaire : guide complet</div>
           <div class="coming-badge">Publié</div>
         </a>
-        <a href="/ouvrir-restaurant/aide-creation-restaurant/" class="coming-card" style="text-decoration:none; color:inherit;">
-          <div class="coming-tag">Ouvrir un restaurant</div>
-          <div class="coming-title">Aides pour ouvrir un restaurant 2026 : toutes les aides disponibles</div>
-          <div class="coming-badge">Nouveau</div>
-        </a>
-        <a href="/gestion-restaurant/calcul-food-cost/" class="coming-card" style="text-decoration:none; color:inherit;">
-          <div class="coming-tag">Gestion</div>
-          <div class="coming-title">Calcul du food cost : formules, ratios et simulateur 2026</div>
-          <div class="coming-badge">Nouveau</div>
-        </a>
-        <a href="/recrutement-restauration/convention-collective-chr/" class="coming-card" style="text-decoration:none; color:inherit;">
-          <div class="coming-tag">RH</div>
-          <div class="coming-title">Convention collective CHR 2026 : grille de salaires et droits</div>
+        <a href="/haccp/formation-haccp/" class="coming-card" style="text-decoration:none; color:inherit;">
+          <div class="coming-tag">HACCP</div>
+          <div class="coming-title">Formation HACCP obligatoire : durée, prix, financement, dispenses</div>
           <div class="coming-badge">Publié</div>
-        </a>
-        <a href="/recrutement-restauration/grille-salaire-cuisinier/" class="coming-card" style="text-decoration:none; color:inherit;">
-          <div class="coming-tag">RH</div>
-          <div class="coming-title">Grille de salaire cuisinier 2026 : tous les niveaux et primes</div>
-          <div class="coming-badge">Nouveau</div>
         </a>
       </div>
     </div>
