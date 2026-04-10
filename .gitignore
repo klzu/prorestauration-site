@@ -1,5 +1,17 @@
+# Système
 .DS_Store
+Thumbs.db
+
+# Fichiers sensibles — ne jamais versionner
+.env
+.htpasswd
+deploy.php
+.cpanel.yml
+
+# Fichiers temporaires
 *.bak
 *.log
-Thumbs.db
+*.sql
+
+# Claude
 .claude/
