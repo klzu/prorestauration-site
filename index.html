@@ -186,7 +186,8 @@
     /* 1er article */
     .first-article { display:grid; grid-template-columns:1fr 340px; gap:48px; align-items:start; }
     .article-featured { background:var(--blanc); border:1px solid var(--border); overflow:hidden; text-decoration:none; color:var(--noir); display:block; }
-    .art-img { background:var(--gris-clair); height:260px; display:flex; align-items:center; justify-content:center; font-size:72px; }
+    .art-img { background:var(--gris-clair); height:260px; display:flex; align-items:center; justify-content:center; font-size:72px; overflow:hidden; }
+    .art-img img { width:100%; height:100%; object-fit:cover; object-position:center; display:block; }
     .art-body { padding:28px 28px 32px; }
     .art-tag { font-size:10.5px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--rouge); margin-bottom:12px; }
     .art-title { font-family:var(--ff-titre); font-size:26px; font-weight:700; line-height:1.2; margin-bottom:14px; }
@@ -287,7 +288,7 @@
 
     <div class="first-article">
       <a class="article-featured" href="/haccp/temperature-conservation-aliments/">
-        <div class="art-img">🌡️</div>
+        <div class="art-img"><img src="/assets/images/temperature-conservation-aliments-hero.webp" alt="Températures de conservation des aliments en restauration — normes HACCP 2026" loading="lazy"></div>
         <div class="art-body">
           <div class="art-tag">HACCP · Réglementation</div>
           <h2 class="art-title">Températures de conservation des aliments : le guide complet 2026</h2>
