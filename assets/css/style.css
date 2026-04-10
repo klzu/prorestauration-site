@@ -92,3 +92,36 @@
 .scc-desc{font-size:12.5px;color:var(--rouge);font-weight:500}
 @media(max-width:900px){.silo-cross-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.silo-cross-grid{grid-template-columns:1fr}}
+
+/* ===== DESIGN MOYEN IMPACT ===== */
+
+/* ── VARIABLES OMBRES ─────────────────────────── */
+:root {
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.09), 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* ── FOCUS VISIBLE (navigation clavier) ────────── */
+:focus-visible {
+  outline: 2px solid var(--rouge);
+  outline-offset: 3px;
+}
+/* Boutons : offset un peu plus grand */
+.btn-primary:focus-visible,
+.btn-outline:focus-visible,
+.btn-outline-white:focus-visible,
+button:focus-visible { outline-offset: 4px; }
+/* Liens dans le texte : outline en dessous */
+a:focus-visible { outline-offset: 2px; }
+/* Nav : intégré dans la barre */
+nav a:focus-visible { outline-offset: -3px; }
+
+/* ── OMBRES SUBTILES SUR LES CARTES ────────────── */
+.p-article-card       { box-shadow: var(--shadow-sm); }
+.p-article-card:hover { box-shadow: var(--shadow-md); }
+.sidebar-widget       { box-shadow: var(--shadow-sm); }
+
+/* ── TEXTES TROP PETITS (min 11px) ─────────────── */
+.p-card-cat   { font-size: 11px; }
+.p-card-badge { font-size: 11px; }
+.p-card-meta  { font-size: 12px; }

@@ -151,9 +151,9 @@ section.home-sec.alt { background:var(--beige); }
 
 /* ── SILOS ───────────────────────────────────── */
 .silos-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
-.silo-card { background:var(--blanc); border:1px solid var(--border); padding:26px; color:var(--noir); display:flex; flex-direction:column; gap:12px; transition:border-color 0.2s,transform 0.2s; position:relative; overflow:hidden; }
+.silo-card { background:var(--blanc); border:1px solid var(--border); padding:26px; color:var(--noir); display:flex; flex-direction:column; gap:12px; transition:border-color 0.2s,transform 0.2s,box-shadow 0.2s; position:relative; overflow:hidden; box-shadow:var(--shadow-sm); }
 .silo-card::before { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--rouge); transform:scaleX(0); transition:transform 0.25s; transform-origin:left; }
-.silo-card:hover { border-color:var(--rouge); transform:translateY(-3px); }
+.silo-card:hover { border-color:var(--rouge); transform:translateY(-3px); box-shadow:var(--shadow-md); }
 .silo-card:hover::before { transform:scaleX(1); }
 .silo-card-link { text-decoration:none; color:inherit; }
 .silo-card-link::after { content:''; position:absolute; inset:0; }
@@ -167,7 +167,8 @@ section.home-sec.alt { background:var(--beige); }
 
 /* ── ARTICLES À LA UNE ───────────────────────── */
 .first-article { display:grid; grid-template-columns:1fr 340px; gap:48px; align-items:start; }
-.article-featured { background:var(--blanc); border:1px solid var(--border); overflow:hidden; text-decoration:none; color:var(--noir); display:block; }
+.article-featured { background:var(--blanc); border:1px solid var(--border); overflow:hidden; text-decoration:none; color:var(--noir); display:block; box-shadow:var(--shadow-sm); transition:box-shadow 0.2s,border-color 0.2s; }
+.article-featured:hover { box-shadow:var(--shadow-md); border-color:var(--border); }
 .art-img { background:var(--gris-clair); height:260px; display:flex; align-items:center; justify-content:center; font-size:72px; overflow:hidden; }
 .featured-stack { display:flex; flex-direction:column; gap:24px; }
 .featured-stack .art-img { height:200px; }
