@@ -7,6 +7,13 @@
 .article-intro { font-size: 18px; color: var(--gris-mid); line-height: 1.7; margin-bottom: 20px; }
 .article-meta-bar { display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--gris-mid); flex-wrap: wrap; }
 .article-meta-bar .sep { color: var(--border); }
+.article-header-img { margin-top: 24px; border-radius: 4px; overflow: hidden; }
+.article-header-img img { width: 100%; height: auto; display: block; }
+
+/* ── IMAGES DANS L'ARTICLE ───────────────────── */
+.article-figure { margin: 28px 0; }
+.article-figure img { width: 100%; height: auto; display: block; border-radius: 4px; }
+.article-figure figcaption { font-size: 13px; color: var(--gris-mid); margin-top: 8px; font-style: italic; text-align: center; }
 
 /* ── SOMMAIRE ────────────────────────────────── */
 .toc { background: var(--gris-clair); border-left: 3px solid var(--rouge); padding: 20px 24px; margin-bottom: 40px; }
