@@ -44,7 +44,7 @@
 RedirectMatch 403 /\.git(/.*)?$
 
 # Fichiers de config, déploiement, secrets
-<FilesMatch "(^\.env|^\.htpasswd|deploy\.php|\.cpanel\.yml|wp-config\.php|config\.php|\.bak|\.log|\.sql|\.pem|\.key)$">
+<FilesMatch "(^\.env|^\.htpasswd|\.cpanel\.yml|wp-config\.php|config\.php|\.bak|\.log|\.sql|\.pem|\.key)$">
   Order Allow,Deny
   Deny from all
 </FilesMatch>
