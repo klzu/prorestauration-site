@@ -6,7 +6,6 @@ Thumbs.db
 .env
 .htpasswd
 deploy.php
-.cpanel.yml
 
 # Fichiers temporaires
 *.bak
