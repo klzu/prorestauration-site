@@ -12,6 +12,9 @@
   <meta property="og:title" content="ProRestauration.fr – Le portail des pros de la restauration">
   <meta property="og:description" content="Fiches techniques, guides HACCP, gestion RH et opérationnelle pour restaurants, hôtels et collectivités.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.prorestauration.fr/assets/images/og-prorestauration.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:url" content="https://www.prorestauration.fr/">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"ProRestauration.fr","url":"https://www.prorestauration.fr","potentialAction":{"@type":"SearchAction","target":"https://www.prorestauration.fr/recherche?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
@@ -200,6 +203,9 @@
     .coming-card { background:var(--blanc); border:1px solid var(--border); padding:20px; display:flex; flex-direction:column; gap:8px; position:relative; }
     .coming-tag { font-size:10px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--gris-mid); }
     .coming-title { font-family:var(--ff-titre); font-size:16px; font-weight:700; color:var(--gris-mid); line-height:1.3; }
+    a.coming-card .coming-title { color:var(--noir); }
+    a.coming-card .coming-badge { background:var(--rouge); color:#fff; }
+    a.coming-card:hover .coming-title { color:var(--rouge); }
     .coming-badge { font-size:10px; font-weight:600; letter-spacing:0.07em; text-transform:uppercase; background:var(--gris-clair); color:var(--gris-mid); padding:3px 10px; display:inline-block; margin-top:auto; }
 
     /* ── SECTION OUTILS ── */
@@ -309,28 +315,28 @@
 
         <a href="/haccp/formation-haccp/" class="coming-card" style="text-decoration:none; color:inherit;">
           <div class="coming-tag">HACCP</div>
-          <div class="coming-title" style="color:var(--noir);">Formation HACCP obligatoire : durée, prix, financement, dispenses</div>
-          <div class="coming-badge" style="background:var(--rouge); color:#fff;">Publié</div>
+          <div class="coming-title">Formation HACCP obligatoire : durée, prix, financement, dispenses</div>
+          <div class="coming-badge">Publié</div>
         </a>
         <a href="/haccp/plan-de-maitrise-sanitaire/" class="coming-card" style="text-decoration:none; color:inherit;">
           <div class="coming-tag">HACCP</div>
-          <div class="coming-title" style="color:var(--noir);">Plan de Maîtrise Sanitaire : guide complet</div>
-          <div class="coming-badge" style="background:var(--rouge); color:#fff;">Publié</div>
+          <div class="coming-title">Plan de Maîtrise Sanitaire : guide complet</div>
+          <div class="coming-badge">Publié</div>
         </a>
         <a href="/ouvrir-restaurant/aide-creation-restaurant/" class="coming-card" style="text-decoration:none; color:inherit;">
           <div class="coming-tag">Ouvrir un restaurant</div>
-          <div class="coming-title" style="color:var(--noir);">Aides pour ouvrir un restaurant 2026 : toutes les aides disponibles</div>
-          <div class="coming-badge" style="background:var(--rouge); color:#fff;">Nouveau</div>
+          <div class="coming-title">Aides pour ouvrir un restaurant 2026 : toutes les aides disponibles</div>
+          <div class="coming-badge">Nouveau</div>
         </a>
         <a href="/gestion-restaurant/calcul-food-cost/" class="coming-card" style="text-decoration:none; color:inherit;">
           <div class="coming-tag">Gestion</div>
-          <div class="coming-title" style="color:var(--noir);">Calcul du food cost : formules, ratios et simulateur 2026</div>
-          <div class="coming-badge" style="background:var(--rouge); color:#fff;">Nouveau</div>
+          <div class="coming-title">Calcul du food cost : formules, ratios et simulateur 2026</div>
+          <div class="coming-badge">Nouveau</div>
         </a>
         <a href="/recrutement-restauration/convention-collective-chr/" class="coming-card" style="text-decoration:none; color:inherit;">
           <div class="coming-tag">RH</div>
-          <div class="coming-title" style="color:var(--noir);">Convention collective CHR 2026 : grille de salaires et droits</div>
-          <div class="coming-badge" style="background:var(--rouge); color:#fff;">Publié</div>
+          <div class="coming-title">Convention collective CHR 2026 : grille de salaires et droits</div>
+          <div class="coming-badge">Publié</div>
         </a>
       </div>
     </div>
@@ -344,66 +350,66 @@
     <div class="sec-title">Tous les sujets qui comptent pour votre restaurant</div>
     <div class="sec-sub">Des ressources organisées par domaine, enrichies semaine après semaine.</div>
     <div class="silos-grid">
-      <div class="silo-card" onclick="location.href='/haccp/'" style="cursor:pointer;">
+      <a class="silo-card" href="/haccp/">
         <div class="silo-icon">🛡️</div>
         <div class="silo-title">HACCP & Hygiène alimentaire</div>
         <div class="silo-desc">PMS, températures, contrôles sanitaires, traçabilité alimentaire, formations obligatoires.</div>
         <div class="silo-links">
-          <a class="silo-link" href="/haccp/plan-de-maitrise-sanitaire/">Plan de Maîtrise Sanitaire</a>
-          <a class="silo-link" href="/haccp/temperature-conservation-aliments/">Températures de conservation</a>
-          <a class="silo-link" href="/haccp/formation-haccp/">Formation HACCP obligatoire</a>
+          <span class="silo-link">Plan de Maîtrise Sanitaire</span>
+          <span class="silo-link">Températures de conservation</span>
+          <span class="silo-link">Formation HACCP obligatoire</span>
         </div>
-      </div>
-      <div class="silo-card" onclick="location.href='/fiches-techniques/'" style="cursor:pointer;">
+      </a>
+      <a class="silo-card" href="/fiches-techniques/">
         <div class="silo-icon">📋</div>
         <div class="silo-title">Fiches techniques culinaires</div>
         <div class="silo-desc">Fiches techniques pro avec calcul du coût de revient. Cuisine, pâtisserie, boulangerie.</div>
         <div class="silo-links">
-          <a class="silo-link" href="/fiches-techniques/fiche-technique-restauration/">Créer une fiche technique</a>
-          <a class="silo-link" href="/fiches-techniques/sauces/">Fiches sauces</a>
-          <a class="silo-link" href="/fiches-techniques/patisserie/">Pâtisserie & desserts</a>
+          <span class="silo-link">Créer une fiche technique</span>
+          <span class="silo-link">Fiches sauces</span>
+          <span class="silo-link">Pâtisserie &amp; desserts</span>
         </div>
-      </div>
-      <div class="silo-card" onclick="location.href='/gestion-restaurant/'" style="cursor:pointer;">
+      </a>
+      <a class="silo-card" href="/gestion-restaurant/">
         <div class="silo-icon">📊</div>
-        <div class="silo-title">Gestion & Finances</div>
+        <div class="silo-title">Gestion &amp; Finances</div>
         <div class="silo-desc">Food cost, gestion des stocks, ratios de rentabilité, prix de vente, prévisionnel.</div>
         <div class="silo-links">
-          <a class="silo-link" href="/gestion-restaurant/calcul-food-cost/">Calculer son food cost</a>
-          <a class="silo-link" href="/gestion-restaurant/gestion-stocks-restaurant/">Gestion des stocks</a>
-          <a class="silo-link" href="/gestion-restaurant/ratios-rentabilite/">Ratios de rentabilité</a>
+          <span class="silo-link">Calculer son food cost</span>
+          <span class="silo-link">Gestion des stocks</span>
+          <span class="silo-link">Ratios de rentabilité</span>
         </div>
-      </div>
-      <div class="silo-card" onclick="location.href='/recrutement-restauration/'" style="cursor:pointer;">
+      </a>
+      <a class="silo-card" href="/recrutement-restauration/">
         <div class="silo-icon">👥</div>
-        <div class="silo-title">RH & Recrutement</div>
+        <div class="silo-title">RH &amp; Recrutement</div>
         <div class="silo-desc">Contrats, plannings, convention collective CHR, grilles de salaires, fiches de poste.</div>
         <div class="silo-links">
-          <a class="silo-link" href="/recrutement-restauration/convention-collective-chr/">Convention collective CHR</a>
-          <a class="silo-link" href="/recrutement-restauration/grille-salaire-cuisinier/">Salaires cuisiniers 2026</a>
-          <a class="silo-link" href="/recrutement-restauration/contrat-saisonnier-restauration/">Contrat saisonnier</a>
+          <span class="silo-link">Convention collective CHR</span>
+          <span class="silo-link">Salaires cuisiniers 2026</span>
+          <span class="silo-link">Contrat saisonnier</span>
         </div>
-      </div>
-      <div class="silo-card" onclick="location.href='/equipements/'" style="cursor:pointer;">
+      </a>
+      <a class="silo-card" href="/equipements/">
         <div class="silo-icon">🔧</div>
         <div class="silo-title">Équipements professionnels</div>
         <div class="silo-desc">Fours, chambres froides, matériel de salle : guides d'achat et comparatifs.</div>
         <div class="silo-links">
-          <a class="silo-link" href="/equipements/four-professionnel/">Fours professionnels</a>
-          <a class="silo-link" href="/equipements/chambre-froide/">Chambres froides</a>
-          <a class="silo-link" href="/equipements/logiciel-gestion-restaurant/">Logiciels de gestion</a>
+          <span class="silo-link">Fours professionnels</span>
+          <span class="silo-link">Chambres froides</span>
+          <span class="silo-link">Logiciels de gestion</span>
         </div>
-      </div>
-      <div class="silo-card" onclick="location.href='/ouvrir-restaurant/'" style="cursor:pointer;">
+      </a>
+      <a class="silo-card" href="/ouvrir-restaurant/">
         <div class="silo-icon">🏪</div>
         <div class="silo-title">Ouvrir un restaurant</div>
         <div class="silo-desc">Business plan, licences, financement, statut juridique et aides à la création.</div>
         <div class="silo-links">
-          <a class="silo-link" href="/ouvrir-restaurant/business-plan-restaurant/">Business plan restaurant</a>
-          <a class="silo-link" href="/ouvrir-restaurant/licence-restaurant/">Licences et autorisations</a>
-          <a class="silo-link" href="/ouvrir-restaurant/aide-creation-restaurant/">Aides à la création 2026</a>
+          <span class="silo-link">Business plan restaurant</span>
+          <span class="silo-link">Licences et autorisations</span>
+          <span class="silo-link">Aides à la création 2026</span>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
