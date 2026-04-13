@@ -68,6 +68,21 @@
     .contact-full-email p { font-size: 0.93rem; color: var(--gris-mid); margin-bottom: 12px; }
     .contact-full-email a { font-size: 1.25rem; font-weight: 700; color: var(--rouge); text-decoration: none; letter-spacing: 0.01em; }
     .contact-full-email a:hover { text-decoration: underline; }
+    .contact-form-wrap { margin-top: 48px; background: #fff; border: 1px solid #e8e4de; border-radius: 12px; padding: 36px; }
+    .contact-form-title { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; margin-bottom: 6px; }
+    .contact-form-subtitle { font-size: 0.92rem; color: var(--gris-mid); margin-bottom: 28px; }
+    .contact-form { display: flex; flex-direction: column; gap: 18px; }
+    .cf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    @media (max-width: 600px) { .cf-row { grid-template-columns: 1fr; } }
+    .cf-field { display: flex; flex-direction: column; gap: 6px; }
+    .cf-field label { font-size: 0.88rem; font-weight: 600; color: var(--noir); }
+    .cf-field input, .cf-field select, .cf-field textarea { border: 1px solid #d8d3cc; border-radius: 8px; padding: 10px 14px; font-size: 0.93rem; font-family: inherit; color: var(--noir); background: #faf8f5; transition: border-color 0.15s; outline: none; }
+    .cf-field input:focus, .cf-field select:focus, .cf-field textarea:focus { border-color: var(--rouge); background: #fff; }
+    .cf-field textarea { resize: vertical; min-height: 120px; }
+    .cf-honeypot { display: none !important; }
+    .cf-submit { align-self: flex-start; padding: 13px 28px; font-size: 0.95rem; cursor: pointer; border: none; }
+    .contact-success { background: #edf7ed; border: 1px solid #7bc47b; color: #2e6b2e; padding: 14px 18px; border-radius: 8px; font-size: 0.93rem; margin-bottom: 20px; }
+    .contact-error { background: #fdecea; border: 1px solid #e57373; color: #8b1a1a; padding: 14px 18px; border-radius: 8px; font-size: 0.93rem; margin-bottom: 20px; }
   </style>
 </head>
 <body>
@@ -159,9 +174,58 @@
 
     </div>
 
+    <!-- FORMULAIRE -->
+    <div class="contact-form-wrap">
+      <h2 class="contact-form-title">Envoyer un message</h2>
+      <p class="contact-form-subtitle">Remplissez le formulaire ci-dessous — nous répondons sous 48h ouvrées.</p>
+
+      <?php if (!empty($_GET['sent'])): ?>
+      <div class="contact-success">
+        ✅ Votre message a bien été envoyé. Nous vous répondrons sous 48h ouvrées.
+      </div>
+      <?php elseif (!empty($_GET['error'])): ?>
+      <div class="contact-error">
+        ⚠️ Une erreur est survenue. Merci d'écrire directement à <a href="mailto:contact@prorestauration.fr">contact@prorestauration.fr</a>.
+      </div>
+      <?php endif; ?>
+
+      <form action="/contact/traitement-contact.php" method="POST" class="contact-form">
+        <div class="cf-row">
+          <div class="cf-field">
+            <label for="cf-nom">Votre nom</label>
+            <input type="text" id="cf-nom" name="nom" placeholder="Jean Dupont" required maxlength="100">
+          </div>
+          <div class="cf-field">
+            <label for="cf-email">Votre e-mail</label>
+            <input type="email" id="cf-email" name="email" placeholder="jean@monrestaurant.fr" required maxlength="150">
+          </div>
+        </div>
+        <div class="cf-field">
+          <label for="cf-sujet">Sujet</label>
+          <select id="cf-sujet" name="sujet" required>
+            <option value="" disabled selected>Choisir un sujet…</option>
+            <option value="Question sur un article">Question sur un article</option>
+            <option value="Signalement d'erreur">Signalement d'erreur</option>
+            <option value="Suggestion d'article">Suggestion d'article</option>
+            <option value="Partenariat">Partenariat</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </div>
+        <div class="cf-field">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Décrivez votre demande…" required maxlength="2000"></textarea>
+        </div>
+        <div class="cf-field cf-honeypot" aria-hidden="true">
+          <label for="cf-website">Site web (ne pas remplir)</label>
+          <input type="text" id="cf-website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+        <button type="submit" class="btn-primary cf-submit">Envoyer le message →</button>
+      </form>
+    </div>
+
     <!-- EMAIL DIRECT -->
     <div class="contact-full-email">
-      <p>Adresse e-mail directe de la rédaction</p>
+      <p>Ou écrivez-nous directement à</p>
       <a href="mailto:contact@prorestauration.fr">contact@prorestauration.fr</a>
     </div>
 
