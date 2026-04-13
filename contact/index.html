@@ -5,23 +5,70 @@
   <meta name="google-site-verification" content="Mz3oErp5bCV9_7MFqreJZkbzNT4kTOfqqYxqt6XNNdE">
   <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact ProRestauration.fr : Nous Écrire | ProRestauration.fr</title>
-  <meta name="description" content="Contactez l'équipe de ProRestauration.fr : partenariats, suggestions d'articles, corrections ou questions. Nous répondons sous 48h.">
-  <meta name="robots" content="noindex, follow">
+  <title>Contact | ProRestauration.fr</title>
+  <meta name="description" content="Contactez l'équipe de ProRestauration.fr : suggestions d'articles, signalement d'erreur, partenariat ou question. Réponse sous 48h à contact@prorestauration.fr">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.prorestauration.fr/contact/">
-  <meta property="og:title" content="Contact ProRestauration.fr : Nous Écrire">
-  <meta property="og:description" content="Contactez l'équipe de ProRestauration.fr : partenariats, suggestions d'articles, corrections ou questions. Nous répondons sous 48h.">
+  <meta property="og:title" content="Contact | ProRestauration.fr">
+  <meta property="og:description" content="Contactez l'équipe de ProRestauration.fr : suggestions d'articles, signalement d'erreur, partenariat ou question. Réponse sous 48h.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.prorestauration.fr/contact/">
   <meta property="og:site_name" content="ProRestauration.fr">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Contact ProRestauration.fr : Nous Écrire">
-  <meta name="twitter:description" content="Contactez l'équipe de ProRestauration.fr : partenariats, suggestions d'articles, corrections ou questions. Nous répondons sous 48h.">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.prorestauration.fr/"}, {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.prorestauration.fr/contact/"}]}</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact ProRestauration.fr",
+  "description": "Page de contact de ProRestauration.fr, portail de référence des professionnels de la restauration en France.",
+  "url": "https://www.prorestauration.fr/contact/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ProRestauration.fr",
+    "url": "https://www.prorestauration.fr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.prorestauration.fr/assets/images/favicon.svg"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@prorestauration.fr",
+      "contactType": "customer support",
+      "availableLanguage": "French"
+    }
+  }
+}
+</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.prorestauration.fr/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://www.prorestauration.fr/contact/"}]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css?v10">
+  <style>
+    .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 40px; }
+    @media (max-width: 768px) { .contact-layout { grid-template-columns: 1fr; gap: 32px; } }
+    .contact-block { background: var(--blanc); border: 1px solid #e8e4de; border-radius: 12px; padding: 32px; }
+    .contact-block-icon { font-size: 28px; margin-bottom: 12px; }
+    .contact-block-title { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: var(--noir); margin-bottom: 8px; }
+    .contact-block-desc { font-size: 0.93rem; color: var(--gris-mid); line-height: 1.6; margin-bottom: 16px; }
+    .contact-email-link { display: inline-flex; align-items: center; gap: 8px; background: var(--rouge); color: #fff; font-weight: 600; font-size: 0.95rem; padding: 12px 20px; border-radius: 8px; text-decoration: none; transition: opacity 0.15s; }
+    .contact-email-link:hover { opacity: 0.88; }
+    .contact-who { margin-top: 48px; padding: 36px; background: #faf8f5; border-radius: 12px; border-left: 4px solid var(--rouge); }
+    .contact-who h2 { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; margin-bottom: 16px; }
+    .contact-who p { font-size: 0.95rem; line-height: 1.75; color: #3a3530; margin-bottom: 12px; }
+    .contact-commitments { margin-top: 40px; }
+    .contact-commitments h2 { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; margin-bottom: 20px; }
+    .commitment-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px; }
+    .commitment-list li { display: flex; gap: 14px; align-items: flex-start; font-size: 0.95rem; line-height: 1.6; }
+    .commitment-list li .ci { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+    .contact-response { margin-top: 40px; background: var(--blanc); border: 1px solid #e8e4de; border-radius: 12px; padding: 28px 32px; display: flex; align-items: center; gap: 20px; }
+    .contact-response-icon { font-size: 36px; flex-shrink: 0; }
+    .contact-response-text strong { display: block; font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+    .contact-response-text span { font-size: 0.9rem; color: var(--gris-mid); line-height: 1.5; }
+    .contact-full-email { margin-top: 40px; padding: 32px; background: #fff; border: 2px solid var(--rouge); border-radius: 12px; text-align: center; }
+    .contact-full-email p { font-size: 0.93rem; color: var(--gris-mid); margin-bottom: 12px; }
+    .contact-full-email a { font-size: 1.25rem; font-weight: 700; color: var(--rouge); text-decoration: none; letter-spacing: 0.01em; }
+    .contact-full-email a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
 
@@ -30,15 +77,14 @@
   <div class="nav-main">
     <a href="/" class="logo">Pro<span>Restauration</span>.fr</a>
     <nav>
-<a href="/haccp/">HACCP &amp; Hygiène</a>
-<a href="/gestion-restaurant/">Gestion &amp; Finances</a>
-<a href="/fiches-techniques/">Fiches techniques</a>
-<a href="/recrutement-restauration/">RH &amp; Recrutement</a>
-<a href="/equipements/">Équipements professionnels</a>
-<a href="/ouvrir-restaurant/">Ouvrir un restaurant</a>
+      <a href="/haccp/">HACCP &amp; Hygiène</a>
+      <a href="/gestion-restaurant/">Gestion &amp; Finances</a>
+      <a href="/fiches-techniques/">Fiches techniques</a>
+      <a href="/recrutement-restauration/">RH &amp; Recrutement</a>
+      <a href="/equipements/">Équipements professionnels</a>
+      <a href="/ouvrir-restaurant/">Ouvrir un restaurant</a>
     </nav>
-    <div class="nav-cta">      <a href="/outils/" class="btn-primary">Outils gratuits ↗</a>
-    </div>
+    <div class="nav-cta"><a href="/outils/" class="btn-primary">Outils gratuits ↗</a></div>
     <button class="nav-burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -57,50 +103,120 @@
 <div class="breadcrumb-bar">
   <div class="container">
     <nav class="breadcrumb" aria-label="Fil d'Ariane">
-      <a href="/">Accueil</a> <span class="bc-sep">›</span> <a href="/contact/">Contact</a>
+      <a href="/">Accueil</a>
+      <span class="bc-sep">›</span>
+      <span>Contact</span>
     </nav>
   </div>
 </div>
 
 <main class="page-main">
-  <div class="container">
-    <div class="page-layout">
+  <div class="container" style="max-width: 860px;">
 
-      <article class="page-content">
-        <div class="page-header">
-          <h1>Contact ProRestauration.fr</h1>
-          <p class="page-intro">Contactez l'équipe de ProRestauration.fr : partenariats, suggestions d'articles, corrections ou questions. Nous répondons sous 48h.</p>
-        </div>
+    <div class="page-header" style="margin-bottom: 0;">
+      <h1>Nous contacter</h1>
+      <p class="page-intro">Une erreur dans un article, une question sur un contenu, une suggestion ou un projet de partenariat — nous lisons chaque message et répondons personnellement.</p>
+    </div>
 
-        <div class="coming-soon">
-          <div class="cs-icon">✍️</div>
-          <h2>Article en cours de rédaction</h2>
-        </div>
-      </article>
+    <!-- BLOCS DE CONTACT -->
+    <div class="contact-layout">
 
-      <aside class="sidebar">
-<div class="sidebar-widget">
-          <h3>Thèmes populaires</h3>
-          <div class="tag-cloud">
-            <a class="tag" href="../haccp/">HACCP</a>
-            <a class="tag" href="../fiches-techniques/">Fiches techniques</a>
-            <a class="tag" href="../gestion-restaurant/calcul-food-cost/">Food cost</a>
-            <a class="tag" href="../recrutement-restauration/">Recrutement</a>
-            <a class="tag" href="../haccp/plan-de-maitrise-sanitaire/">PMS</a>
-            <a class="tag" href="../ouvrir-restaurant/">Ouvrir un restaurant</a>
-            <a class="tag" href="../legislation-restauration/">Législation CHR</a>
-            <a class="tag" href="../gestion-restaurant/gestion-stocks-restaurant/">Stocks</a>
-          </div>
-        </div>
-      </aside>
+      <div class="contact-block">
+        <div class="contact-block-icon">✉️</div>
+        <div class="contact-block-title">Question ou suggestion</div>
+        <div class="contact-block-desc">Vous avez une question sur un de nos guides, une suggestion d'article ou souhaitez signaler une information à mettre à jour ? Écrivez-nous directement.</div>
+        <a href="mailto:contact@prorestauration.fr?subject=Question%20sur%20un%20guide" class="contact-email-link">
+          Écrire à la rédaction →
+        </a>
+      </div>
+
+      <div class="contact-block">
+        <div class="contact-block-icon">🔍</div>
+        <div class="contact-block-title">Signaler une erreur</div>
+        <div class="contact-block-desc">Vous avez repéré une information inexacte, une donnée chiffrée obsolète ou un lien cassé dans un de nos articles ? Merci de nous le signaler — c'est précieux.</div>
+        <a href="mailto:contact@prorestauration.fr?subject=Signalement%20erreur%20article" class="contact-email-link">
+          Signaler une erreur →
+        </a>
+      </div>
+
+      <div class="contact-block">
+        <div class="contact-block-icon">🤝</div>
+        <div class="contact-block-title">Partenariat &amp; presse</div>
+        <div class="contact-block-desc">Vous représentez un syndicat professionnel, un organisme de formation, une institution ou une marque du secteur CHR et souhaitez collaborer avec ProRestauration.fr ?</div>
+        <a href="mailto:contact@prorestauration.fr?subject=Partenariat%20ProRestauration" class="contact-email-link">
+          Discuter d'un partenariat →
+        </a>
+      </div>
+
+      <div class="contact-block">
+        <div class="contact-block-icon">📝</div>
+        <div class="contact-block-title">Proposer un contenu</div>
+        <div class="contact-block-desc">Vous êtes professionnel de la restauration, expert-comptable CHR, formateur ou consultant et souhaitez contribuer à un article ou être cité comme source ? Contactez-nous.</div>
+        <a href="mailto:contact@prorestauration.fr?subject=Proposition%20de%20contenu" class="contact-email-link">
+          Proposer un article →
+        </a>
+      </div>
 
     </div>
+
+    <!-- EMAIL DIRECT -->
+    <div class="contact-full-email">
+      <p>Adresse e-mail directe de la rédaction</p>
+      <a href="mailto:contact@prorestauration.fr">contact@prorestauration.fr</a>
+    </div>
+
+    <!-- DÉLAI DE RÉPONSE -->
+    <div class="contact-response">
+      <div class="contact-response-icon">⏱️</div>
+      <div class="contact-response-text">
+        <strong>Réponse sous 48h ouvrées</strong>
+        <span>Nous lisons chaque message reçu et répondons personnellement. Les messages envoyés le week-end ou pendant les jours fériés sont traités le premier jour ouvré suivant.</span>
+      </div>
+    </div>
+
+    <!-- QUI SOMMES-NOUS -->
+    <div class="contact-who">
+      <h2>Qui se cache derrière ProRestauration.fr ?</h2>
+      <p>ProRestauration.fr est un portail éditorial indépendant dédié aux professionnels de la restauration commerciale et collective en France. Nos guides sont rédigés par une équipe de rédacteurs spécialisés en gestion CHR, droit du travail de la restauration, hygiène alimentaire et gestion d'entreprise.</p>
+      <p>Chaque article est vérifié sur la base des textes réglementaires en vigueur (arrêtés, décrets, règlements CE), des données officielles (ANSES, Ministère du Travail, UMIH, GNI) et des conventions collectives applicables. Nous mettons nos contenus à jour dès qu'une évolution réglementaire l'impose.</p>
+      <p>Nous ne sommes affiliés à aucun syndicat professionnel, aucune institution publique ni aucun fournisseur de produits ou services. Notre seul objectif est de fournir des informations fiables et pratiques aux restaurateurs et gérants d'établissements CHR.</p>
+      <p><a href="/a-propos/">En savoir plus sur notre équipe et notre méthode éditoriale →</a></p>
+    </div>
+
+    <!-- NOS ENGAGEMENTS -->
+    <div class="contact-commitments">
+      <h2>Nos engagements éditoriaux</h2>
+      <ul class="commitment-list">
+        <li>
+          <span class="ci">✅</span>
+          <span><strong>Sources vérifiées</strong> — Toutes nos données chiffrées (salaires, températures réglementaires, taux de cotisation) sont issues de textes officiels ou de données sectorielles publiées par des organismes reconnus.</span>
+        </li>
+        <li>
+          <span class="ci">✅</span>
+          <span><strong>Mise à jour régulière</strong> — Nous révisons nos articles dès qu'une réglementation évolue (revalorisation du SMIC, nouveau décret, mise à jour de convention collective). La date de dernière mise à jour est affichée sur chaque article.</span>
+        </li>
+        <li>
+          <span class="ci">✅</span>
+          <span><strong>Indépendance éditoriale</strong> — Aucun article n'est rédigé en échange d'une rémunération. Les mentions de logiciels ou de prestataires dans nos guides sont basées sur notre analyse, pas sur des accords commerciaux.</span>
+        </li>
+        <li>
+          <span class="ci">✅</span>
+          <span><strong>Corrections rapides</strong> — Si vous signalez une erreur factuelle, nous la corrigeons sous 48h et l'indiquons en note de bas d'article. La transparence sur les corrections fait partie de notre déontologie.</span>
+        </li>
+        <li>
+          <span class="ci">✅</span>
+          <span><strong>Pas de contenu généré automatiquement</strong> — Chaque guide est écrit, relu et validé par un humain. Nous n'utilisons pas de génération automatique de texte sans supervision éditoriale.</span>
+        </li>
+      </ul>
+    </div>
+
   </div>
 </main>
 
 <footer>
   <div class="footer-grid container">
-    <div><a href="/" class="footer-logo">Pro<span>Restauration</span>.fr</a>
+    <div>
+      <a href="/" class="footer-logo">Pro<span>Restauration</span>.fr</a>
       <p class="footer-tagline">Le portail de référence des professionnels de la restauration, de l'hôtellerie et de la cuisine collective en France.</p>
     </div>
     <div class="footer-col"><h4>Ressources</h4><ul>
