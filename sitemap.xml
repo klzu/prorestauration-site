@@ -53,6 +53,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- ══ ARTICLES FICHES TECHNIQUES ══ -->
+  <url>
+    <loc>https://www.prorestauration.fr/fiches-techniques/fiche-technique-restauration/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- ══ ARTICLES HACCP ══ -->
   <url>
     <loc>https://www.prorestauration.fr/haccp/temperature-conservation-aliments/</loc>
