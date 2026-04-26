@@ -4,7 +4,7 @@
   <!-- ══ ACCUEIL ══ -->
   <url>
     <loc>https://www.prorestauration.fr/</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,43 +12,43 @@
   <!-- ══ PAGES PILIER ══ -->
   <url>
     <loc>https://www.prorestauration.fr/haccp/</loc>
-    <lastmod>2026-04-12</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.prorestauration.fr/gestion-restaurant/</loc>
-    <lastmod>2026-04-12</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.prorestauration.fr/fiches-techniques/</loc>
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.prorestauration.fr/recrutement-restauration/</loc>
-    <lastmod>2026-04-12</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.prorestauration.fr/equipements/</loc>
-    <lastmod>2026-04-12</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.prorestauration.fr/ouvrir-restaurant/</loc>
-    <lastmod>2026-04-12</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.prorestauration.fr/outils/</loc>
-    <lastmod>2026-03-01</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -56,7 +56,7 @@
   <!-- ══ ARTICLES FICHES TECHNIQUES ══ -->
   <url>
     <loc>https://www.prorestauration.fr/fiches-techniques/fiche-technique-restauration/</loc>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -70,25 +70,25 @@
   <!-- ══ ARTICLES HACCP ══ -->
   <url>
     <loc>https://www.prorestauration.fr/haccp/controle-sanitaire-restaurant/</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.prorestauration.fr/haccp/temperature-conservation-aliments/</loc>
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.prorestauration.fr/haccp/plan-de-maitrise-sanitaire/</loc>
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.prorestauration.fr/haccp/formation-haccp/</loc>
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -96,13 +96,13 @@
   <!-- ══ ARTICLES GESTION ══ -->
   <url>
     <loc>https://www.prorestauration.fr/gestion-restaurant/calcul-food-cost/</loc>
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.prorestauration.fr/gestion-restaurant/ratios-rentabilite/</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -110,13 +110,13 @@
   <!-- ══ ARTICLES RECRUTEMENT ══ -->
   <url>
     <loc>https://www.prorestauration.fr/recrutement-restauration/convention-collective-chr/</loc>
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.prorestauration.fr/recrutement-restauration/grille-salaire-cuisinier/</loc>
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -124,7 +124,7 @@
   <!-- ══ ARTICLES ÉQUIPEMENTS ══ -->
   <url>
     <loc>https://www.prorestauration.fr/equipements/logiciel-gestion-restaurant/</loc>
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -132,7 +132,7 @@
   <!-- ══ ARTICLES OUVRIR UN RESTAURANT ══ -->
   <url>
     <loc>https://www.prorestauration.fr/ouvrir-restaurant/aide-creation-restaurant/</loc>
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -140,13 +140,13 @@
   <!-- ══ PAGES INSTITUTIONNELLES ══ -->
   <url>
     <loc>https://www.prorestauration.fr/contact/</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.prorestauration.fr/mentions-legales/</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
