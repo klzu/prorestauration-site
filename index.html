@@ -20,11 +20,15 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"ProRestauration.fr","url":"https://www.prorestauration.fr","potentialAction":{"@type":"SearchAction","target":"https://www.prorestauration.fr/recherche?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/images/hero-kitchen.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="assets/css/style.css?v10">
-  <link rel="stylesheet" href="assets/css/homepage.css?v2">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+  <style>
+/* ── homepage critical CSS (inlined to avoid render-blocking) ── */
+.hero{position:relative;min-height:78vh;display:flex;align-items:center;overflow:hidden;color:var(--blanc)}.hero-bg{position:absolute;inset:0;background-image:image-set(url('assets/images/hero-kitchen.webp') type('image/webp'),url('assets/images/hero-kitchen.jpg') type('image/jpeg'));background-position:center 40%;background-size:cover;background-repeat:no-repeat;transform:scale(1.06);animation:heroZoom 14s cubic-bezier(.25,.46,.45,.94) forwards;will-change:transform;z-index:0}@keyframes heroZoom{from{transform:scale(1.06)}to{transform:scale(1)}}@media(prefers-reduced-motion:reduce){.hero-bg{animation:none;transform:scale(1)}.hero-scroll-line{animation:none}}.hero-overlay{position:absolute;inset:0;background:linear-gradient(108deg,rgba(6,6,6,.94) 0%,rgba(6,6,6,.82) 38%,rgba(6,6,6,.42) 62%,rgba(6,6,6,.18) 100%),linear-gradient(to top,rgba(6,6,6,.72) 0%,transparent 42%);z-index:1}.hero-overlay::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:linear-gradient(to bottom,var(--rouge) 0%,transparent 70%)}.hero-inner{position:relative;z-index:2;max-width:1260px;margin:0 auto;padding:0 48px;width:100%}.hero-eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:30px}.hero-eyebrow-line{display:block;width:36px;height:2px;background:var(--rouge);flex-shrink:0}.hero-eyebrow span{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.82)}.hero h1{font-family:var(--ff-titre);font-size:clamp(42px,5.8vw,80px);font-weight:900;line-height:1.01;letter-spacing:-.03em;margin-bottom:26px;max-width:720px}.hero h1 em{font-style:normal;color:var(--rouge)}.hero-sub{font-size:17px;color:rgba(255,255,255,.82);line-height:1.78;margin-bottom:42px;max-width:480px;font-weight:300}.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.hero-actions .btn-primary{font-size:14px;padding:13px 28px;letter-spacing:.03em}.hero-scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none}.hero-scroll-line{width:1px;height:48px;background:linear-gradient(to bottom,var(--rouge),transparent);animation:scrollPulse 2.2s ease-in-out infinite;transform-origin:top}.hero-scroll span{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)}@keyframes scrollPulse{0%,100%{opacity:1;transform:scaleY(1)}50%{opacity:.35;transform:scaleY(.65)}}section.home-sec{padding:64px 0}section.home-sec.alt{background:var(--beige)}.sec-label{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--rouge);margin-bottom:10px}.sec-sub{font-size:15px;color:var(--gris-mid);max-width:540px;margin-bottom:40px}.silos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.silo-card{background:var(--blanc);border:1px solid var(--border);padding:26px;color:var(--noir);display:flex;flex-direction:column;gap:12px;transition:border-color .2s,transform .2s,box-shadow .2s;position:relative;overflow:hidden;box-shadow:var(--shadow-sm)}.silo-card::before{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--rouge);transform:scaleX(0);transition:transform .25s;transform-origin:left}.silo-card:hover{border-color:var(--rouge);transform:translateY(-3px);box-shadow:var(--shadow-md)}.silo-card:hover::before{transform:scaleX(1)}.silo-card-link{text-decoration:none;color:inherit}.silo-card-link::after{content:'';position:absolute;inset:0}.silo-icon{font-size:30px;width:52px;height:52px;background:var(--gris-clair);display:flex;align-items:center;justify-content:center}.silo-title{font-family:var(--ff-titre);font-size:19px;font-weight:700;line-height:1.2}.silo-desc{font-size:13.5px;color:var(--gris-mid);line-height:1.65}.silo-links{display:flex;flex-direction:column;gap:6px;padding-top:8px;border-top:1px solid var(--border)}.silo-link{font-size:13px;color:var(--gris-fonce);text-decoration:none;display:flex;align-items:center;gap:5px;position:relative;z-index:1}.silo-link:hover{color:var(--rouge)}.silo-link::before{content:'→';color:var(--rouge);font-size:11px}.first-article{display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:start}.article-featured{background:var(--blanc);border:1px solid var(--border);overflow:hidden;text-decoration:none;color:var(--noir);display:block;box-shadow:var(--shadow-sm);transition:box-shadow .2s,border-color .2s}.article-featured:hover{box-shadow:var(--shadow-md);border-color:var(--border)}.art-img{background:var(--gris-clair);height:260px;display:flex;align-items:center;justify-content:center;font-size:72px;overflow:hidden}.featured-stack{display:flex;flex-direction:column;gap:24px}.featured-stack .art-img{height:200px}.art-img img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}.art-body{padding:28px 28px 32px}.art-tag{font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--rouge);margin-bottom:12px}.art-title{font-family:var(--ff-titre);font-size:26px;font-weight:700;line-height:1.2;margin-bottom:14px}.art-excerpt{font-size:14.5px;color:var(--gris-mid);line-height:1.7;margin-bottom:20px}.art-meta{font-size:12px;color:var(--gris-mid);display:flex;gap:10px;flex-wrap:wrap}.art-read{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:600;color:var(--rouge);text-decoration:none;margin-top:18px}.article-featured:hover .art-title{color:var(--rouge)}.coming-aside{display:flex;flex-direction:column;gap:16px}.coming-card{background:var(--blanc);border:1px solid var(--border);padding:20px;display:flex;flex-direction:column;gap:8px;position:relative}.coming-tag{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gris-mid)}.coming-title{font-family:var(--ff-titre);font-size:16px;font-weight:700;color:var(--gris-mid);line-height:1.3}a.coming-card .coming-title{color:var(--noir)}a.coming-card .coming-badge{background:var(--rouge);color:#fff}a.coming-card:hover .coming-title{color:var(--rouge)}.coming-badge{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;background:var(--gris-clair);color:var(--gris-mid);padding:3px 10px;display:inline-block;margin-top:auto}.outils-home{background:var(--blanc);color:var(--noir);padding:64px 0;border-top:1px solid var(--border)}.outils-home-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:48px;flex-wrap:wrap}.outils-home-head .sec-title,.outils-home-head .sec-sub{margin-bottom:0}.outils-home-cta{font-size:13px;font-weight:600;color:var(--gris-mid);text-decoration:none;white-space:nowrap;border-bottom:1px solid var(--border);padding-bottom:2px;transition:color .15s,border-color .15s;flex-shrink:0}.outils-home-cta:hover{color:var(--noir);border-color:var(--noir)}.outils-home-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border)}.outil-home-card{background:var(--blanc);padding:32px 28px 36px;text-decoration:none;color:var(--noir);display:flex;flex-direction:column;gap:16px;transition:background .2s;position:relative;overflow:hidden}.outil-home-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--rouge);transform:scaleX(0);transform-origin:left;transition:transform .3s}.outil-home-card:hover{background:var(--beige)}.outil-home-card:hover::before{transform:scaleX(1)}.outil-num{font-size:11px;font-weight:700;letter-spacing:.15em;color:var(--border);font-family:var(--ff-body)}.outil-home-icon{font-size:28px}.outil-home-name{font-family:var(--ff-titre);font-size:18px;font-weight:700;line-height:1.2;color:var(--noir)}.outil-home-desc{font-size:13px;color:var(--gris-mid);line-height:1.6;flex:1}.outil-home-arrow{font-size:13px;font-weight:600;color:var(--rouge);display:flex;align-items:center;gap:6px;margin-top:auto;transition:gap .2s}.outil-home-card:hover .outil-home-arrow{gap:10px}@media(max-width:1024px){.silos-grid{grid-template-columns:repeat(2,1fr)}.first-article{grid-template-columns:1fr}.outils-home-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:768px){.hero{min-height:65vh}.hero-inner{padding:0 20px}.hero h1{font-size:clamp(34px,9vw,52px)}.hero-sub{font-size:15px;margin-bottom:32px}.hero-scroll{display:none}.art-img{height:200px}.featured-stack .art-img{height:180px}.art-body{padding:20px 20px 24px}.art-title{font-size:21px}.first-article{gap:32px}}@media(max-width:700px){.silos-grid{grid-template-columns:1fr}.outils-home-grid{grid-template-columns:1fr}section.home-sec{padding:48px 0}}
+  </style>
 </head>
 <body>
 
@@ -57,6 +61,7 @@
   <a href="/outils/" class="nav-mobile-cta">Outils gratuits ↗</a>
 </div>
 
+<main>
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
@@ -83,7 +88,7 @@
 <section class="home-sec">
   <div class="container">
     <div class="sec-label">Derniers guides publiés</div>
-    <div class="sec-title">Des guides complets pour les pros de la restauration</div>
+    <h2 class="sec-title">Des guides complets pour les pros de la restauration</h2>
     <div class="sec-sub">Réglementation, gestion, RH : des contenus vérifiés, mis à jour et directement applicables.</div>
 
     <div class="first-article">
@@ -96,7 +101,7 @@
          width="1200" height="800" alt="Entrées de restaurant gastronomique avec fiches techniques professionnelles" loading="lazy"></div>
           <div class="art-body">
             <div class="art-tag">Fiches techniques · Entrées</div>
-            <h2 class="art-title">Fiches techniques entrées 2026 : 3 recettes complètes avec coût de revient</h2>
+            <h3 class="art-title">Fiches techniques entrées 2026 : 3 recettes complètes avec coût de revient</h3>
             <p class="art-excerpt">Velouté de butternut, salade César, tartare de saumon : 3 fiches techniques complètes avec grammages, rendements, food cost et coefficients multiplicateurs pour vos entrées.</p>
             <div class="art-meta">
               <span>📅 Avril 2026</span>
@@ -116,7 +121,7 @@
          width="1200" height="800" alt="Inspecteur contrôle sanitaire vérifiant la cuisine d'un restaurant" loading="lazy"></div>
           <div class="art-body">
             <div class="art-tag">HACCP &amp; Hygiène · Contrôle sanitaire</div>
-            <h2 class="art-title">Contrôle sanitaire restaurant 2026 : guide complet DDPP, préparation et sanctions</h2>
+            <h3 class="art-title">Contrôle sanitaire restaurant 2026 : guide complet DDPP, préparation et sanctions</h3>
             <p class="art-excerpt">Qui contrôle, à quelle fréquence, les 10 points vérifiés en priorité, documents obligatoires, notation Alim'confiance, sanctions possibles et comment préparer votre établissement.</p>
             <div class="art-meta">
               <span>📅 Avril 2026</span>
@@ -173,7 +178,7 @@
 <section class="home-sec alt">
   <div class="container">
     <div class="sec-label">Explorer par thème</div>
-    <div class="sec-title">Tous les sujets qui comptent pour votre restaurant</div>
+    <h2 class="sec-title">Tous les sujets qui comptent pour votre restaurant</h2>
     <div class="sec-sub">Des ressources organisées par domaine, enrichies semaine après semaine.</div>
     <div class="silos-grid">
       <div class="silo-card">
@@ -247,7 +252,7 @@
     <div class="outils-home-head">
       <div>
         <div class="sec-label">Outils gratuits</div>
-        <div class="sec-title">Des outils concrets, utilisables maintenant.</div>
+        <h2 class="sec-title">Des outils concrets, utilisables maintenant.</h2>
         <div class="sec-sub" style="margin-top:10px;">Calculateurs, générateurs et checklists — sans inscription.</div>
       </div>
       <a href="/outils/" class="outils-home-cta">Voir tous les outils →</a>
@@ -284,6 +289,7 @@
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="footer-grid container">
