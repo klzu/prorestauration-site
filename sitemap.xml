@@ -123,6 +123,12 @@
 
   <!-- ══ ARTICLES ÉQUIPEMENTS ══ -->
   <url>
+    <loc>https://www.prorestauration.fr/equipements/four-professionnel/</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.prorestauration.fr/equipements/logiciel-gestion-restaurant/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
