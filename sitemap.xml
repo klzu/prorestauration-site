@@ -121,6 +121,13 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.prorestauration.fr/recrutement-restauration/avantage-repas-employe/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- ══ ARTICLES ÉQUIPEMENTS ══ -->
   <url>
     <loc>https://www.prorestauration.fr/equipements/four-professionnel/</loc>
