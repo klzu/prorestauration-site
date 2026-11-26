@@ -88,7 +88,7 @@
 <body>
 
 <header>
-  <div class="nav-top">✦ Nouveau guide : <a href="/recrutement-restauration/grille-salaire-cuisinier/">Grille de salaire cuisinier 2026 — tous les niveaux CHR →</a></div>
+  <div class="nav-top">✦ Nouveau : <a href="/recrutement-restauration/grille-salaire-cuisinier/">Grille des salaires HCR au 1er novembre 2026 — avenant n°36 →</a></div>
   <div class="nav-main">
     <a href="/" class="logo">Pro<span>Restauration</span>.fr</a>
     <nav>
@@ -288,14 +288,16 @@
       <li><a href="/gestion-restaurant/">Gestion &amp; Finances</a></li>
       <li><a href="/fiches-techniques/">Fiches techniques</a></li>
       <li><a href="/recrutement-restauration/">RH &amp; Recrutement</a></li>
+      <li><a href="/equipements/">Équipements &amp; logiciels</a></li>
       <li><a href="/ouvrir-restaurant/">Ouvrir un restaurant</a></li>
     </ul></div>
-    <div class="footer-col"><h4>Outils gratuits</h4><ul>
-      <li><a href="/outils/generateur-fiche-technique/">Générateur fiches techniques</a></li>
-      <li><a href="/outils/calculateur-food-cost/">Calculateur food cost</a></li>
-      <li><a href="/outils/checklist-haccp/">Checklist HACCP</a></li>
-      <li><a href="/outils/simulateur-rentabilite/">Simulateur rentabilité</a></li>
-      <li><a href="/outils/planning-restaurant/">Planning équipe</a></li>
+    <div class="footer-col"><h4>Guides populaires</h4><ul>
+      <li><a href="/recrutement-restauration/convention-collective-chr/">Convention collective HCR</a></li>
+      <li><a href="/recrutement-restauration/grille-salaire-cuisinier/">Grille des salaires HCR 2026</a></li>
+      <li><a href="/haccp/plan-de-maitrise-sanitaire/">Plan de Maîtrise Sanitaire</a></li>
+      <li><a href="/haccp/temperature-conservation-aliments/">Températures de conservation</a></li>
+      <li><a href="/gestion-restaurant/calcul-food-cost/">Calcul du food cost</a></li>
+      <li><a href="/equipements/logiciel-gestion-restaurant/">Logiciel de gestion restaurant</a></li>
     </ul></div>
     <div class="footer-col"><h4>À propos</h4><ul>
       <li><a href="/a-propos/">Qui sommes-nous ?</a></li>

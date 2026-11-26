@@ -15,6 +15,11 @@
   RewriteCond %{HTTP_HOST} !^www\. [NC]
   RewriteCond %{HTTPS} on
   RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Pages vides supprimées (novembre 2026) → page la plus proche
+  RewriteRule ^recettes-professionnelles/?$ /fiches-techniques/ [L,R=301]
+  RewriteRule ^(franchise|livraison)-restauration/?$ /ouvrir-restaurant/ [L,R=301]
+  RewriteRule ^(blog|newsletter)/?$ / [L,R=301]
 </IfModule>
 
 # ── HEADERS DE SÉCURITÉ ─────────────────────────────────────────
