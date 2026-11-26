@@ -286,3 +286,21 @@ a.btn-outline, .page-content a.btn-outline { color: var(--noir); }
 .p-article-card--full .p-card-footer{padding:14px 36px 22px}
 @media(max-width:1024px){.p-article-card--full,.p-article-card--wide{grid-column:1/-1}}
 @media(max-width:640px){.p-article-card--wide,.p-article-card--full{grid-column:auto}}
+/* ===== Articles : sommaire (correctif : les règles nav du menu ne doivent pas s'appliquer) ===== */
+nav.article-toc,nav.toc{display:block;height:auto}
+.article-toc a,.toc a{display:inline;height:auto;padding:0;border-bottom:0;font-weight:400;white-space:normal}
+.article-toc ol,.toc ol{display:block;columns:2;column-gap:36px;padding-left:20px}
+.article-toc ol li,.toc ol li{break-inside:avoid;margin:0 0 7px;font-size:14px;line-height:1.45}
+@media(max-width:700px){.article-toc ol,.toc ol{columns:1}}
+html{scroll-padding-top:100px}
+/* Sommaire latéral collant */
+.page-layout>aside.sidebar.has-toc-side{position:static;align-self:stretch}
+aside.sidebar.has-toc-side .sidebar-sticky{position:static}
+.toc-side{position:sticky;top:96px;max-height:calc(100vh - 120px);overflow:auto}
+.toc-side ol{list-style:none;padding:0;margin:0;columns:1;display:block}
+.toc-side li{margin:0;font-size:13px;line-height:1.4}
+.toc-side a{display:block;padding:6px 0 6px 10px;border-left:2px solid var(--border);color:var(--gris-fonce);text-decoration:none;height:auto}
+.toc-side a:hover{color:var(--rouge)}
+.toc-side a.active{border-left-color:var(--rouge);color:var(--rouge);font-weight:600}
+@media(max-width:1100px){.toc-side{display:none}}
+.read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--rouge);z-index:300;transition:width .1s linear}
