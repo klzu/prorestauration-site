@@ -88,6 +88,22 @@
     },
     {
       "@type": "Question",
+      "name": "Quelle est la différence entre food cost théorique et food cost réel ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le food cost théorique est ce que vos ventes auraient dû consommer selon vos fiches techniques (plats vendus × coût portion). Le food cost réel est ce que vous avez réellement consommé (stock initial + achats − stock final). L'écart entre les deux mesure les pertes, surportions, offerts non saisis et erreurs de fiches techniques."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "À quelle fréquence faire l'inventaire pour suivre son food cost ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un inventaire complet chaque mois est le minimum pour calculer un food cost réel fiable. Beaucoup de restaurateurs ajoutent un inventaire hebdomadaire limité aux produits les plus chers (viandes, poissons, fromages, alcools), qui concentrent l'essentiel des écarts. L'important est de garder des périodes régulières pour pouvoir comparer."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Combien de points de food cost peut-on gagner avec un logiciel ?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -185,7 +201,7 @@
           <div class="article-meta-bar">
             <span><span aria-hidden="true">📅</span> Mis à jour : novembre 2026</span>
             <span class="sep">·</span>
-            <span><span aria-hidden="true">⏱️</span> 6 min de lecture</span>
+            <span><span aria-hidden="true">⏱️</span> 11 min de lecture</span>
             <span class="sep">·</span>
             <span><span aria-hidden="true">📋</span> Tarifs vérifiés sur les sites éditeurs</span>
             <span class="sep">·</span>
@@ -209,6 +225,11 @@
             <li><a href="#fonctions">Ce que doit faire un logiciel de food cost</a></li>
             <li><a href="#comparatif">Comparatif des logiciels de food cost en France</a></li>
             <li><a href="#recommandation">Quel logiciel choisir ?</a></li>
+            <li><a href="#workflow">Du bon de livraison à la marge : comment fonctionne un logiciel de food cost</a></li>
+            <li><a href="#ecart">Écart théorique / réel : un exemple chiffré</a></li>
+            <li><a href="#tableur">Logiciel de food cost ou tableur : que choisir ?</a></li>
+            <li><a href="#mise-en-place">Mettre en place un logiciel de food cost en 4 semaines</a></li>
+            <li><a href="#erreurs">Les erreurs qui faussent le food cost</a></li>
             <li><a href="#gain">Quel gain attendre ?</a></li>
             <li><a href="#faq">Questions fréquentes</a></li>
           </ol>
@@ -265,17 +286,104 @@
             <li><strong>L'engagement</strong> : 12 mois chez plusieurs éditeurs, sans engagement chez d'autres. Faites le calcul sur la durée.</li>
           </ol>
         </section>
-        <section id="gain">
-          <h2>Quel gain attendre ?</h2>
-          <p>Il n'existe pas d'étude indépendante qui mesure le gain moyen apporté par un logiciel de food cost. Les éditeurs avancent leurs propres chiffres, sans méthodologie publiée : « jusqu'à 5 points de marge » pour Inpulse, « +5 % de marge brute » pour Koust, « 5 % d'économie matière par site » pour Melba. À lire comme des promesses commerciales, pas comme des résultats garantis.</p>
-          <p>Le levier réel, c'est la discipline que l'outil rend possible : fiches techniques à jour, inventaires réguliers, réception contrôlée et analyse des écarts. Un point de food cost gagné sur un restaurant qui réalise 600 000 € de chiffre d'affaires représente 6 000 € de marge par an — l'ordre de grandeur à comparer au coût de l'abonnement. Pour situer votre food cost, voir nos repères sur les <a href="/gestion-restaurant/ratios-rentabilite/">ratios de rentabilité</a> et la <a href="/gestion-restaurant/marge-brute-restauration/">marge brute</a>.</p>
+        <section id="workflow">
+          <h2>Du bon de livraison à la marge : comment fonctionne un logiciel de food cost</h2>
+          <p>Un logiciel de food cost ne « calcule » rien tout seul : il relie quatre flux de données que vous alimentez au quotidien. Comprendre ce circuit permet de savoir où se situe le travail réel et ce que l'outil automatise.</p>
+          <ol>
+            <li><strong>Les prix d'achat</strong> : à chaque réception, le bon de livraison ou la facture met à jour le prix de chaque produit (saisie, photo ou lecture automatique selon les outils). Une hausse fournisseur se répercute immédiatement dans toutes les fiches techniques concernées.</li>
+            <li><strong>Les fiches techniques</strong> : chaque plat est décrit par ses ingrédients, ses grammages nets et ses pertes à la préparation (épluchage, parage, cuisson). Le logiciel en déduit le coût portion et le ratio matière par rapport au prix de vente HT.</li>
+            <li><strong>Les ventes</strong> : via la connexion caisse, le nombre de plats vendus remonte automatiquement. Multiplié par les fiches techniques, il donne la <strong>consommation théorique</strong> de chaque produit.</li>
+            <li><strong>Les inventaires</strong> : le stock compté en début et en fin de période, plus les achats, donne la <strong>consommation réelle</strong>. L'écart entre les deux est l'indicateur central.</li>
+          </ol>
+          <p>Si l'un des maillons manque — fiches techniques incomplètes, inventaire approximatif, caisse non connectée — l'écart devient ininterprétable. C'est pourquoi la qualité des fiches techniques compte plus que le choix du logiciel lui-même. Pour les construire, voir notre <a href="/outils/generateur-fiche-technique/">générateur de fiches techniques</a>.</p>
+        </section>
+        <section id="ecart">
+          <h2>Écart théorique / réel : un exemple chiffré</h2>
+          <p>Prenons un restaurant qui réalise 40 000 € HT de chiffre d'affaires nourriture sur un mois. Le logiciel croise les ventes et les fiches techniques, puis l'inventaire de fin de mois :</p>
+          <div class="table-wrapper">
+            <table class="data-table">
+              <thead><tr><th>Indicateur</th><th>Calcul</th><th>Résultat</th></tr></thead>
+              <tbody>
+                <tr><td>Consommation théorique</td><td>Σ (plats vendus × coût portion des fiches techniques)</td><td>11 200 €, soit 28 % du CA</td></tr>
+                <tr class="row-alt"><td>Consommation réelle</td><td>Stock initial + achats − stock final</td><td>12 400 €, soit 31 % du CA</td></tr>
+                <tr class="row-highlight"><td>Écart</td><td>Consommation réelle − consommation théorique</td><td>1 200 €, soit 3 points de food cost</td></tr>
+                <tr class="row-alt"><td>Sur un an</td><td>1 200 € × 12 mois</td><td>14 400 € de marge perdue</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">Exemple illustratif : les montants sont choisis pour montrer la méthode, pas pour servir de référence sectorielle.</p>
+          <p>Les 3 points d'écart ne disent pas encore <em>où</em> part l'argent. Un bon logiciel descend au niveau du produit : si l'écart se concentre sur le saumon, c'est une piste de surportion ou de perte ; s'il se répartit sur tous les produits, c'est souvent un problème de fiches techniques non mises à jour ou d'inventaire mal compté. Les causes les plus fréquentes :</p>
+          <div class="table-wrapper">
+            <table class="data-table">
+              <thead><tr><th>Cause de l'écart</th><th>Signe dans le logiciel</th><th>Action corrective</th></tr></thead>
+              <tbody>
+                <tr><td>Surportion</td><td>Écart concentré sur quelques produits chers (protéines, fromages)</td><td>Rappel des grammages, balance au passe, photo de dressage de référence</td></tr>
+                <tr class="row-alt"><td>Pertes et casse non déclarées</td><td>Écart régulier sur les produits frais</td><td>Saisie systématique des pertes, rotation FIFO des stocks</td></tr>
+                <tr><td>Repas du personnel et offerts non saisis</td><td>Écart diffus sur l'ensemble de la carte</td><td>Touches dédiées en caisse pour les repas du personnel et les offerts</td></tr>
+                <tr class="row-alt"><td>Fiches techniques obsolètes</td><td>Écart qui grandit après un changement de carte ou de fournisseur</td><td>Revue des fiches à chaque changement de carte</td></tr>
+                <tr><td>Erreurs de réception</td><td>Quantités facturées supérieures aux quantités reçues</td><td>Contrôle quantitatif à chaque livraison</td></tr>
+                <tr class="row-alt"><td>Vol</td><td>Écart ponctuel et inexpliqué sur des produits faciles à emporter</td><td>Inventaires tournants plus fréquents sur ces références</td></tr>
+              </tbody>
+            </table>
+          </div>
         </section>
         <div class="in-article-cta">
           <strong>Pas encore prêt pour un logiciel ?</strong>
           <p>Commencez par nos outils gratuits : générateur de fiches techniques et calculateur de food cost.</p>
           <a href="/outils/generateur-fiche-technique/" class="btn-primary">Générateur gratuit →</a>
         </div>
+        <section id="tableur">
+          <h2>Logiciel de food cost ou tableur : que choisir ?</h2>
+          <div class="table-wrapper">
+            <table class="data-table">
+              <thead><tr><th>Critère</th><th>Tableur (Excel, Google Sheets)</th><th>Logiciel de food cost</th></tr></thead>
+              <tbody>
+                <tr><td>Coût</td><td>Gratuit ou presque</td><td>Abonnement mensuel (gratuit à environ 160 €/mois par site pour les offres publiques)</td></tr>
+                <tr class="row-alt"><td>Mise à jour des prix</td><td>Manuelle, produit par produit</td><td>Automatique à la réception ou à la facture</td></tr>
+                <tr><td>Ventes</td><td>Saisie manuelle des quantités vendues</td><td>Remontée automatique par la caisse</td></tr>
+                <tr class="row-alt"><td>Écart théorique / réel</td><td>Possible, mais long à calculer</td><td>Calculé en continu, par produit</td></tr>
+                <tr><td>Inventaire</td><td>Sur papier puis ressaisie</td><td>Sur mobile ou tablette, valorisé immédiatement</td></tr>
+                <tr class="row-alt"><td>Multi-sites</td><td>Difficile à consolider</td><td>Consolidation native</td></tr>
+                <tr><td>Pour qui ?</td><td>Carte courte, un seul site, gérant disponible</td><td>Carte large, plusieurs sites, ou besoin de suivre l'écart chaque semaine</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Le tableur reste une excellente école : un restaurateur qui sait calculer son food cost à la main comprend ce que fait le logiciel et repère plus vite ses erreurs. Notre <a href="/outils/calculateur-food-cost/">calculateur de food cost</a> permet de démarrer sans rien installer.</p>
+        </section>
+        <section id="mise-en-place">
+          <h2>Mettre en place un logiciel de food cost en 4 semaines</h2>
+          <ol>
+            <li><strong>Semaine 1 — Les produits et les fournisseurs</strong> : importez la mercuriale (liste des produits avec unités et prix), idéalement à partir des dernières factures. Harmonisez les unités (kg, litre, pièce) : c'est la première source d'erreurs.</li>
+            <li><strong>Semaine 2 — Les fiches techniques</strong> : commencez par les 20 plats qui font l'essentiel des ventes plutôt que par toute la carte. Pesez réellement les portions en cuisine, sans vous fier aux grammages « de mémoire ».</li>
+            <li><strong>Semaine 3 — La caisse et le premier inventaire</strong> : connectez la caisse, vérifiez que chaque touche correspond bien à une fiche technique, puis réalisez un inventaire complet de départ.</li>
+            <li><strong>Semaine 4 — La première analyse</strong> : après un second inventaire, analysez le premier écart théorique / réel. Il est souvent élevé au début : il révèle d'abord les erreurs de paramétrage, avant les vraies pertes.</li>
+          </ol>
+          <p>Ensuite, installez une routine : contrôle des réceptions au quotidien, inventaire des produits chers chaque semaine, inventaire complet chaque mois, revue des fiches techniques à chaque changement de carte.</p>
+        </section>
+        <section id="erreurs">
+          <h2>Les erreurs qui faussent le food cost</h2>
+          <ul>
+            <li><strong>Oublier les pertes à la préparation</strong> dans les fiches techniques : un filet de poisson acheté entier ou une botte de légumes épluchée ne donnent pas le même poids net.</li>
+            <li><strong>Calculer sur le prix TTC</strong> : le ratio matière se calcule toujours sur le prix de vente HT.</li>
+            <li><strong>Faire l'inventaire à des dates irrégulières</strong> : un écart n'a de sens que sur des périodes comparables.</li>
+            <li><strong>Ne pas saisir les offerts, les repas du personnel et les pertes</strong> : ils apparaissent alors comme un écart inexpliqué.</li>
+            <li><strong>Laisser une seule personne maîtriser l'outil</strong> : en cas d'absence, les réceptions et les inventaires ne sont plus saisis.</li>
+            <li><strong>Regarder le food cost global sans descendre au plat</strong> : un plat très rentable peut masquer un plat vendu à perte. Pour arbitrer la carte plat par plat, voir notre guide de la <a href="/gestion-restaurant/marge-brute-restauration/">marge brute en restauration</a>.</li>
+          </ul>
+        </section>
+        <section id="gain">
+          <h2>Quel gain attendre ?</h2>
+          <p>Il n'existe pas d'étude indépendante qui mesure le gain moyen apporté par un logiciel de food cost. Les éditeurs avancent leurs propres chiffres, sans méthodologie publiée : « jusqu'à 5 points de marge » pour Inpulse, « +5 % de marge brute » pour Koust, « 5 % d'économie matière par site » pour Melba. À lire comme des promesses commerciales, pas comme des résultats garantis.</p>
+          <p>Le levier réel, c'est la discipline que l'outil rend possible : fiches techniques à jour, inventaires réguliers, réception contrôlée et analyse des écarts. Un point de food cost gagné sur un restaurant qui réalise 600 000 € de chiffre d'affaires représente 6 000 € de marge par an — l'ordre de grandeur à comparer au coût de l'abonnement. Pour situer votre food cost, voir nos repères sur les <a href="/gestion-restaurant/ratios-rentabilite/">ratios de rentabilité</a> et la <a href="/gestion-restaurant/marge-brute-restauration/">marge brute</a>.</p>
+        </section>
 
+        <div class="video-embed">
+          <div class="video-label">Ressource vidéo</div>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube-nocookie.com/embed/a9L9IDhX6g4" title="Gérer son restaurant : ratio, coefficient, food cost" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="video-caption">Ratios, coefficient multiplicateur et food cost : les indicateurs de gestion d'un restaurant expliqués par un formateur — Coach Mon Resto.</p>
+        </div>
 
         <section id="faq">
           <h2>Questions fréquentes</h2>
@@ -295,6 +403,14 @@
             <details class="faq-item">
               <summary>Un logiciel de food cost doit-il être connecté à la caisse ?</summary>
               <p>C'est fortement recommandé : la remontée automatique des ventes permet de calculer la consommation théorique et donc l'écart avec la consommation réelle, qui révèle pertes et surportions. Sans connexion, vous devez saisir les ventes à la main.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Quelle est la différence entre food cost théorique et food cost réel ?</summary>
+              <p>Le food cost théorique est ce que vos ventes auraient dû consommer selon vos fiches techniques (plats vendus × coût portion). Le food cost réel est ce que vous avez réellement consommé (stock initial + achats − stock final). L'écart entre les deux mesure les pertes, surportions, offerts non saisis et erreurs de fiches techniques.</p>
+            </details>
+            <details class="faq-item">
+              <summary>À quelle fréquence faire l'inventaire pour suivre son food cost ?</summary>
+              <p>Un inventaire complet chaque mois est le minimum pour calculer un food cost réel fiable. Beaucoup de restaurateurs ajoutent un inventaire hebdomadaire limité aux produits les plus chers (viandes, poissons, fromages, alcools), qui concentrent l'essentiel des écarts. L'important est de garder des périodes régulières pour pouvoir comparer.</p>
             </details>
             <details class="faq-item">
               <summary>Combien de points de food cost peut-on gagner avec un logiciel ?</summary>

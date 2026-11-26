@@ -88,6 +88,22 @@
     },
     {
       "@type": "Question",
+      "name": "Le pointage est-il obligatoire dans un restaurant ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dès que les horaires diffèrent selon les salariés, ce qui est le cas de la plupart des restaurants, l'employeur doit enregistrer chaque jour les heures de début et de fin de travail de chaque salarié et établir un récapitulatif hebdomadaire (article D3171-8 du Code du travail). La forme est libre : feuille signée, badgeuse ou application. Un pointage sur tablette simplifie ce décompte et sert de preuve en cas de litige."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Peut-on utiliser une badgeuse à empreinte digitale ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ce n'est pas recommandé : la CNIL considère que la biométrie (empreinte digitale, reconnaissance faciale) n'est pas justifiée pour le simple contrôle des horaires. Un code personnel, un badge ou une validation sur tablette suffisent. Dans tous les cas, les salariés doivent être informés avant la mise en place du dispositif."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Peut-on faire le planning d'un restaurant sur Excel ?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -185,7 +201,7 @@
           <div class="article-meta-bar">
             <span><span aria-hidden="true">📅</span> Mis à jour : novembre 2026</span>
             <span class="sep">·</span>
-            <span><span aria-hidden="true">⏱️</span> 7 min de lecture</span>
+            <span><span aria-hidden="true">⏱️</span> 11 min de lecture</span>
             <span class="sep">·</span>
             <span><span aria-hidden="true">📋</span> Tarifs vérifiés sur les sites éditeurs</span>
             <span class="sep">·</span>
@@ -210,7 +226,11 @@
             <li><a href="#comparatif">Comparatif des logiciels de planning</a></li>
             <li><a href="#recommandation">Quel logiciel de planning choisir ?</a></li>
             <li><a href="#obligations">Les obligations légales qu'un logiciel vous aide à respecter</a></li>
+            <li><a href="#construire">Construire le planning d'un restaurant en 5 étapes</a></li>
             <li><a href="#masse-salariale">Planning et masse salariale : le vrai enjeu</a></li>
+            <li><a href="#exemple">Exemple chiffré : ce que coûte une heure de trop par jour</a></li>
+            <li><a href="#pointage">Pointage et badgeuse : les règles à connaître</a></li>
+            <li><a href="#deploiement">Déployer un logiciel de planning dans l'équipe</a></li>
             <li><a href="#faq">Questions fréquentes</a></li>
           </ol>
         </nav>
@@ -283,11 +303,67 @@
           <p>Notre modèle de planning Excel, compatible convention HCR, suffit souvent pour une équipe de quelques personnes.</p>
           <a href="/outils/planning-restaurant/" class="btn-primary">Télécharger le modèle →</a>
         </div>
+        <section id="construire">
+          <h2>Construire le planning d'un restaurant en 5 étapes</h2>
+          <ol>
+            <li><strong>Partir des flux, pas des habitudes</strong> : relevez le nombre de couverts par service et par jour sur plusieurs semaines (la caisse le donne). Un mardi midi et un samedi soir ne demandent pas la même équipe.</li>
+            <li><strong>Définir les besoins par poste</strong> : combien de personnes en cuisine, en salle et à la plonge pour chaque niveau d'activité, avec les heures de mise en place et de fermeture.</li>
+            <li><strong>Placer les contrats</strong> : temps pleins, temps partiels, apprentis (avec leurs règles propres), extras. Commencez par les salariés aux horaires les plus contraints.</li>
+            <li><strong>Vérifier les règles</strong> : durées maximales, repos quotidien et hebdomadaire, coupures, heures supplémentaires. C'est l'étape qu'un logiciel automatise le mieux, en signalant chaque dépassement.</li>
+            <li><strong>Publier et ajuster</strong> : diffusez le planning suffisamment tôt, puis comparez chaque semaine le prévu et le réalisé (pointage) pour affiner les besoins par service.</li>
+          </ol>
+          <p>Pour les apprentis mineurs, les règles sont plus strictes (durée du travail, repos, travail de nuit) : vérifiez-les avant de les planifier. Les minima de rémunération figurent dans notre <a href="/recrutement-restauration/grille-salaire-cuisinier/">grille des salaires HCR 2026</a>.</p>
+        </section>
         <section id="masse-salariale">
           <h2>Planning et masse salariale : le vrai enjeu</h2>
           <p>La masse salariale représente souvent le premier poste de charges d'un restaurant, au même niveau que les matières premières. Un planning construit sur les flux réels (moins de personnel en creux, renfort au coup de feu) est le levier le plus direct pour la maîtriser. C'est pourquoi la connexion entre le planning et la caisse — pour suivre le ratio masse salariale / chiffre d'affaires par service — est un critère de choix important. Repères et seuils dans notre guide des <a href="/gestion-restaurant/ratios-rentabilite/">ratios de rentabilité</a>.</p>
         </section>
+        <section id="exemple">
+          <h2>Exemple chiffré : ce que coûte une heure de trop par jour</h2>
+          <p>Le planning est le premier levier sur la masse salariale. Pour s'en rendre compte, calculons le coût d'<strong>une seule heure planifiée en trop chaque jour</strong>, 6 jours par semaine, sur 52 semaines (soit 312 heures par an), aux taux horaires minima de la grille HCR (avenant n°36, applicable au 1er novembre 2026) :</p>
+          <div class="table-wrapper">
+            <table class="data-table">
+              <thead><tr><th>Salarié</th><th>Taux horaire brut minimum</th><th>Heure sup. 36e–39e (+10 %)</th><th>Coût brut annuel de 312 h au taux normal</th></tr></thead>
+              <tbody>
+                <tr><td>Niveau I, échelon 1 (ex. plongeur)</td><td>12,31 €</td><td>13,54 €</td><td>3 840,72 €</td></tr>
+                <tr class="row-alt"><td>Niveau II, échelon 1 (ex. commis)</td><td>12,58 €</td><td>13,84 €</td><td>3 924,96 €</td></tr>
+                <tr><td>Niveau III, échelon 1 (ex. chef de partie)</td><td>13,59 €</td><td>14,95 €</td><td>4 240,08 €</td></tr>
+                <tr class="row-alt"><td>Niveau IV, échelon 1 (ex. second de cuisine)</td><td>14,69 €</td><td>16,16 €</td><td>4 583,28 €</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">Montants bruts salariaux, hors charges patronales et hors majorations : le coût réel pour l'employeur est plus élevé, et il augmente encore si ces heures sont des heures supplémentaires. Les salaires réellement versés sont souvent supérieurs aux minima conventionnels.</p>
+          <p>Une heure de trop par jour sur un seul salarié représente donc près de 4 000 € bruts par an. Sur une équipe de 8, avec des plannings construits « à l'habitude » plutôt que sur les flux, l'enjeu se compte vite en dizaines de milliers d'euros. C'est ce que mesure un logiciel de planning connecté à la caisse : le ratio masse salariale / chiffre d'affaires, service par service.</p>
+        </section>
+        <section id="pointage">
+          <h2>Pointage et badgeuse : les règles à connaître</h2>
+          <p>Le pointage n'est pas une formalité. Depuis l'arrêt de la Cour de justice de l'Union européenne du 14 mai 2019 (affaire C-55/18), les États membres doivent imposer aux employeurs un système objectif, fiable et accessible permettant de mesurer la durée du temps de travail journalier de chaque salarié. En France, le Code du travail impose déjà un décompte quotidien des heures dès que les horaires diffèrent selon les salariés (article D3171-8), ce qui est le cas de la plupart des restaurants.</p>
+          <ul>
+            <li><strong>Tablette ou application mobile</strong> : c'est la solution la plus répandue en restauration (Komia, Skello, Combo la proposent). Le pointage alimente directement le décompte des heures et les variables de paie.</li>
+            <li><strong>Biométrie</strong> : la CNIL considère que le recours à l'empreinte digitale ou à la reconnaissance faciale n'est pas justifié pour le simple contrôle des horaires. Préférez un code, un badge ou une validation sur tablette.</li>
+            <li><strong>Géolocalisation</strong> : elle doit rester proportionnée ; informez les salariés et limitez-la au moment du pointage.</li>
+            <li><strong>Information des salariés et du CSE</strong> : tout dispositif de contrôle du temps de travail doit être porté à la connaissance des salariés avant sa mise en place, et le CSE consulté s'il existe.</li>
+          </ul>
+          <p>En cas de litige sur les heures, le juge examine les éléments fournis par les deux parties : un pointage fiable, contrôlé et conservé est la meilleure protection de l'employeur comme du salarié.</p>
+        </section>
+        <section id="deploiement">
+          <h2>Déployer un logiciel de planning dans l'équipe</h2>
+          <ol>
+            <li><strong>Paramétrer avant d'annoncer</strong> : postes, contrats, taux horaires, règles de majoration HCR, jours de repos. Un planning faux le premier jour décrédibilise l'outil.</li>
+            <li><strong>Faire tester un responsable de salle et un chef de cuisine</strong> pendant une ou deux semaines, en doublon de l'ancien planning.</li>
+            <li><strong>Former l'équipe en 10 minutes</strong> : installation de l'application, consultation du planning, pointage, demande de congés.</li>
+            <li><strong>Basculer la paie</strong> une fois que le prévu et le réalisé concordent : export des variables vers votre logiciel de paie ou votre expert-comptable.</li>
+          </ol>
+          <p>Le gain de temps vient surtout de la suppression des allers-retours : plus de photos du planning papier envoyées par message, plus de ressaisie des heures en fin de mois, plus de calcul manuel des heures supplémentaires.</p>
+        </section>
 
+        <div class="video-embed">
+          <div class="video-label">Ressource vidéo</div>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube-nocookie.com/embed/ahX3B3ty5c8" title="5 clés pour votre gestion RH en Hôtellerie-Restauration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="video-caption">Planning, recrutement, temps de travail : les clés de la gestion RH en hôtellerie-restauration — Factorial France.</p>
+        </div>
 
         <section id="faq">
           <h2>Questions fréquentes</h2>
@@ -307,6 +383,14 @@
             <details class="faq-item">
               <summary>Quelles règles de repos un planning de restaurant doit-il respecter ?</summary>
               <p>Au minimum 11 heures consécutives de repos quotidien et 24 heures consécutives de repos hebdomadaire, auxquelles s'ajoutent les 11 heures de repos quotidien (Code du travail). La convention HCR prévoit en plus des règles propres au secteur.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Le pointage est-il obligatoire dans un restaurant ?</summary>
+              <p>Dès que les horaires diffèrent selon les salariés, ce qui est le cas de la plupart des restaurants, l'employeur doit enregistrer chaque jour les heures de début et de fin de travail de chaque salarié et établir un récapitulatif hebdomadaire (article D3171-8 du Code du travail). La forme est libre : feuille signée, badgeuse ou application. Un pointage sur tablette simplifie ce décompte et sert de preuve en cas de litige.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Peut-on utiliser une badgeuse à empreinte digitale ?</summary>
+              <p>Ce n'est pas recommandé : la CNIL considère que la biométrie (empreinte digitale, reconnaissance faciale) n'est pas justifiée pour le simple contrôle des horaires. Un code personnel, un badge ou une validation sur tablette suffisent. Dans tous les cas, les salariés doivent être informés avant la mise en place du dispositif.</p>
             </details>
             <details class="faq-item">
               <summary>Peut-on faire le planning d'un restaurant sur Excel ?</summary>

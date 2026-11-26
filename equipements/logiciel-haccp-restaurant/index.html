@@ -88,6 +88,22 @@
     },
     {
       "@type": "Question",
+      "name": "Combien de temps conserver les enregistrements HACCP ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le règlement (CE) n°852/2004 parle d'une « période appropriée », proportionnée à la nature et à la taille de l'entreprise. Pour la traçabilité, la règle usuelle est de conserver les documents 6 mois après la livraison pour les produits à DLC courte (moins de 3 mois) et 5 ans pour les autres. Un logiciel HACCP archive automatiquement l'historique : vérifiez la durée de conservation prévue au contrat et la possibilité d'exporter vos données si vous changez d'outil."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Que faire quand un capteur signale une température hors seuil ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vérifier d'abord la mesure avec une sonde (porte restée ouverte, livraison en cours, dégivrage), puis appliquer l'action corrective prévue dans votre PMS : transfert des produits, évaluation de leur salubrité, destruction si nécessaire, intervention du frigoriste. Notez cette action dans le logiciel : c'est ce que l'inspecteur vérifiera."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Un logiciel HACCP remplace-t-il la formation hygiène ?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -185,7 +201,7 @@
           <div class="article-meta-bar">
             <span><span aria-hidden="true">📅</span> Mis à jour : novembre 2026</span>
             <span class="sep">·</span>
-            <span><span aria-hidden="true">⏱️</span> 8 min de lecture</span>
+            <span><span aria-hidden="true">⏱️</span> 11 min de lecture</span>
             <span class="sep">·</span>
             <span><span aria-hidden="true">📋</span> Tarifs vérifiés sur les sites éditeurs</span>
             <span class="sep">·</span>
@@ -210,6 +226,10 @@
             <li><a href="#reglementation">Registre papier ou numérique : ce que dit la réglementation</a></li>
             <li><a href="#comparatif">Comparatif des logiciels HACCP</a></li>
             <li><a href="#capteurs">Capteurs connectés : le vrai gain</a></li>
+            <li><a href="#passer-numerique">Passer du classeur papier au numérique en 4 étapes</a></li>
+            <li><a href="#enregistrements">Les enregistrements à numériser en priorité</a></li>
+            <li><a href="#controle">Ce que l'inspecteur regarde lors d'un contrôle</a></li>
+            <li><a href="#installation">Bien installer ses capteurs de température</a></li>
             <li><a href="#choisir">Quel logiciel HACCP choisir ?</a></li>
             <li><a href="#faq">Questions fréquentes</a></li>
           </ol>
@@ -273,6 +293,56 @@
           <p>Notre checklist HACCP gratuite et imprimable couvre les relevés de température, la réception, le nettoyage et la traçabilité.</p>
           <a href="/outils/checklist-haccp/" class="btn-primary">Télécharger la checklist →</a>
         </div>
+        <section id="passer-numerique">
+          <h2>Passer du classeur papier au numérique en 4 étapes</h2>
+          <ol>
+            <li><strong>Inventorier vos points de contrôle</strong> : chaque enceinte froide (chambres froides, armoires, cellules, vitrines), chaque poste de cuisson et de refroidissement, chaque fournisseur. C'est la base du paramétrage, et elle découle directement de votre <a href="/haccp/plan-de-maitrise-sanitaire/">Plan de Maîtrise Sanitaire</a>.</li>
+            <li><strong>Reporter vos seuils et vos fréquences</strong> dans l'application : températures cibles par enceinte, fréquence des relevés, tâches de nettoyage, contrôle des huiles. Le logiciel applique votre PMS, il ne le remplace pas.</li>
+            <li><strong>Équiper et tester</strong> : installer les capteurs, l'imprimante d'étiquettes et la tablette, puis déclencher volontairement une alerte (porte de chambre froide ouverte) pour vérifier qu'elle arrive bien au bon destinataire.</li>
+            <li><strong>Former l'équipe et doubler une semaine</strong> : tenir papier et numérique en parallèle quelques jours, le temps que chacun prenne le réflexe. Conservez ensuite vos anciens registres papier : ils restent des preuves.</li>
+          </ol>
+        </section>
+        <section id="enregistrements">
+          <h2>Les enregistrements à numériser en priorité</h2>
+          <div class="table-wrapper">
+            <table class="data-table">
+              <thead><tr><th>Enregistrement</th><th>Fréquence (fixée par votre PMS)</th><th>Ce que le numérique apporte</th></tr></thead>
+              <tbody>
+                <tr><td>Températures des enceintes froides</td><td>Au moins quotidienne, souvent matin et soir</td><td>Capteurs en continu, alertes de nuit, historique complet</td></tr>
+                <tr class="row-alt"><td>Contrôle à réception</td><td>À chaque livraison</td><td>Photo de l'étiquette, température saisie, non-conformités tracées</td></tr>
+                <tr><td>Traçabilité des produits</td><td>À chaque réception et à chaque ouverture</td><td>Lot et DLC retrouvés en quelques secondes en cas de rappel</td></tr>
+                <tr class="row-alt"><td>Étiquetage DLC des préparations</td><td>À chaque préparation ou déconditionnement</td><td>Étiquettes imprimées, dates calculées automatiquement</td></tr>
+                <tr><td>Refroidissement rapide</td><td>À chaque refroidissement</td><td>Calcul de la durée, alerte si l'objectif n'est pas atteint</td></tr>
+                <tr class="row-alt"><td>Plan de nettoyage</td><td>Selon le plan (quotidien, hebdomadaire…)</td><td>Tâches récurrentes, rappels, validation horodatée</td></tr>
+                <tr><td>Huiles de friture</td><td>À chaque contrôle ou changement</td><td>Historique des changements et des mesures</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">Les fréquences dépendent de votre activité et sont définies dans votre PMS. Les seuils de température réglementaires figurent dans notre <a href="/haccp/temperature-conservation-aliments/">tableau des températures de conservation</a> ; les durées de conservation des documents de traçabilité dans notre guide de la <a href="/haccp/tracabilite-alimentaire/">traçabilité alimentaire</a>.</p>
+        </section>
+        <section id="controle">
+          <h2>Ce que l'inspecteur regarde lors d'un contrôle</h2>
+          <p>Lors d'un contrôle de la DDPP (ou DDETSPP), l'inspecteur évalue l'établissement point par point selon quatre niveaux de conformité, et le résultat est publié sur Alim'confiance. Côté documents, il vérifie notamment :</p>
+          <ul>
+            <li>que le <strong>PMS existe</strong> et correspond à l'activité réelle de l'établissement ;</li>
+            <li>que les <strong>enregistrements sont tenus</strong> : températures, réceptions, nettoyage, traçabilité — avec des valeurs chiffrées et des dates cohérentes ;</li>
+            <li>que les <strong>non-conformités ont été traitées</strong> : une température hors seuil doit être suivie d'une action corrective notée (produit jeté, réparation, contrôle renforcé) ;</li>
+            <li>que la <strong>traçabilité permet de retrouver un lot</strong> et ses fournisseurs ;</li>
+            <li>que l'établissement justifie de la <strong>formation à l'hygiène</strong> d'au moins une personne.</li>
+          </ul>
+          <p>C'est sur le troisième point que le numérique fait la différence : un logiciel HACCP demande de saisir l'action corrective au moment même de l'alerte, là où le registre papier montre souvent une valeur hors seuil sans aucune suite. Pour préparer la visite, voir notre guide du <a href="/haccp/controle-sanitaire-restaurant/">contrôle sanitaire en restaurant</a>.</p>
+        </section>
+        <section id="installation">
+          <h2>Bien installer ses capteurs de température</h2>
+          <ul>
+            <li><strong>Un capteur par enceinte</strong> : chambre froide positive, chambre froide négative, armoires, vitrines réfrigérées, cellule de refroidissement.</li>
+            <li><strong>Le bon emplacement</strong> : à distance de la porte et de l'évaporateur, là où sont stockés les produits, pour mesurer une température représentative et non le souffle de l'air froid.</li>
+            <li><strong>Des seuils réalistes</strong> : une alerte qui sonne à chaque ouverture de porte finit par être ignorée. La plupart des outils permettent une temporisation avant l'alerte.</li>
+            <li><strong>Une chaîne d'alerte claire</strong> : qui reçoit l'alerte la nuit et le week-end, et que doit-il faire ? Notez-le dans le PMS.</li>
+            <li><strong>Une couverture réseau vérifiée</strong> : les chambres froides, avec leurs parois isolées, bloquent souvent les ondes. Testez la connexion avant l'installation définitive.</li>
+            <li><strong>Un étalonnage régulier</strong>, avec une sonde de référence, et un contrôle humain des valeurs à une fréquence définie.</li>
+          </ul>
+        </section>
         <section id="choisir">
           <h2>Quel logiciel HACCP choisir ?</h2>
           <ul>
@@ -283,6 +353,13 @@
           <p>Dans tous les cas, demandez une démonstration sur vos propres équipements (nombre d'enceintes, de postes de cuisson, de fournisseurs) et faites le calcul complet : abonnement + matériel, sur la durée d'engagement. Pour situer l'HACCP dans votre équipement logiciel global, voir notre <a href="/equipements/logiciel-gestion-restaurant/">comparatif des logiciels de gestion restaurant</a>.</p>
         </section>
 
+        <div class="video-embed">
+          <div class="video-label">Ressource vidéo</div>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube-nocookie.com/embed/LLLWmv4NyQE" title="Le Plan de Maîtrise Sanitaire (PMS) au restaurant : à quoi il sert, ce qu'il contient" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="video-caption">Le Plan de Maîtrise Sanitaire au restaurant : à quoi il sert et ce qu'il contient — OAFormation.</p>
+        </div>
 
         <section id="faq">
           <h2>Questions fréquentes</h2>
@@ -302,6 +379,14 @@
             <details class="faq-item">
               <summary>Les capteurs de température connectés sont-ils obligatoires ?</summary>
               <p>Non. La réglementation impose de maîtriser et de surveiller les températures, pas d'utiliser des capteurs. Mais ils enregistrent en continu, alertent en cas de panne, y compris la nuit, et fournissent un historique complet : c'est le principal gain d'un logiciel HACCP.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Combien de temps conserver les enregistrements HACCP ?</summary>
+              <p>Le règlement (CE) n°852/2004 parle d'une « période appropriée », proportionnée à la nature et à la taille de l'entreprise. Pour la traçabilité, la règle usuelle est de conserver les documents 6 mois après la livraison pour les produits à DLC courte (moins de 3 mois) et 5 ans pour les autres. Un logiciel HACCP archive automatiquement l'historique : vérifiez la durée de conservation prévue au contrat et la possibilité d'exporter vos données si vous changez d'outil.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Que faire quand un capteur signale une température hors seuil ?</summary>
+              <p>Vérifier d'abord la mesure avec une sonde (porte restée ouverte, livraison en cours, dégivrage), puis appliquer l'action corrective prévue dans votre PMS : transfert des produits, évaluation de leur salubrité, destruction si nécessaire, intervention du frigoriste. Notez cette action dans le logiciel : c'est ce que l'inspecteur vérifiera.</p>
             </details>
             <details class="faq-item">
               <summary>Un logiciel HACCP remplace-t-il la formation hygiène ?</summary>
