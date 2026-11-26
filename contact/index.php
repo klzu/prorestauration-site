@@ -42,7 +42,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css?v10">
+  <link rel="stylesheet" href="../assets/css/style.css?v12">
   <style>
     .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 40px; }
     @media (max-width: 768px) { .contact-layout { grid-template-columns: 1fr; gap: 32px; } }

@@ -278,3 +278,11 @@ a.btn-outline, .page-content a.btn-outline { color: var(--noir); }
 .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 .video-caption { font-size: 13px; color: var(--gris-mid); margin-top: 10px; font-style: italic; }
 .silo-nav li .silo-soon{color:var(--gris-mid)}
+.p-article-card--wide{grid-column:span 2}
+.p-article-card--full{grid-column:1/-1}
+.p-article-card--wide .p-card-title,.p-article-card--full .p-card-title{font-size:22px}
+.p-article-card--full .p-card-body{padding:34px 36px 16px}
+.p-article-card--full .p-card-excerpt{max-width:760px;font-size:14.5px}
+.p-article-card--full .p-card-footer{padding:14px 36px 22px}
+@media(max-width:1024px){.p-article-card--full,.p-article-card--wide{grid-column:1/-1}}
+@media(max-width:640px){.p-article-card--wide,.p-article-card--full{grid-column:auto}}
